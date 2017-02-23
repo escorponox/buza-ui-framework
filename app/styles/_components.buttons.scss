@@ -1,0 +1,127 @@
+.c-button {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 36px;
+  padding: 0 20px;
+  min-width: 64px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  font-weight: 500;
+  transition: color 0.2s cubic-bezier(0.4,0,0.2,1), border-color 0.2s cubic-bezier(0.4,0,0.2,1), background 0.2s cubic-bezier(0.4,0,0.2,1);
+
+  &[disabled] {
+    cursor: default;
+    background: $color-font-gray;
+    color: #fff;
+  }
+
+  .fa {
+    padding-right: 8px;
+  }
+}
+
+.c-button--hover {
+  color: #fff;
+  border-color: $color-maroon-input-bg;
+  background: $color-maroon-input-bg;
+}
+
+.c-button--active {
+  color: #fff;
+  border-color: $color-maroon-darker;
+  background: $color-maroon-darker;
+}
+
+.c-button--basic {
+  color: $color-maroon-darker;
+  border-color: $color-maroon-darker;
+  background: #fff;
+
+  &:hover {
+    @extend .c-button--hover;
+  }
+
+  &:active {
+    @extend .c-button--active;
+  }
+}
+
+.c-button--rounded {
+  @extend .c-button--basic;
+  border-radius: 20px;
+}
+
+
+.c-button-group {
+  display: flex;
+
+  .c-button {
+    &:not(:first-of-type):not(:last-of-type) {
+      border-radius: 0;
+    }
+
+    &:first-of-type {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    + .c-button {
+      margin-left: -1px;
+    }
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .c-button--rounded {
+    color: #fff;
+    border-color: $color-maroon-darker;
+    background: $color-maroon-darker;
+
+    &:not(:first-of-type) {
+      border-left-color: #fff;
+    }
+
+    &:active {
+      color: #fff;
+      border-color: $color-maroon-input-bg;
+      background: $color-maroon-input-bg;
+    }
+
+    &:first-of-type {
+      &:hover {
+        border-left-color: #000;
+      }
+    }
+
+    &:last-of-type {
+      &:hover {
+        border-right-color: #000;
+      }
+    }
+
+    &:hover {
+      background: #000;
+      border-top-color: #000;
+      border-bottom-color: #000;
+      border-right-color: #fff;
+    }
+
+    &:active {
+      border-right-color: #fff;
+      border-left-color: #fff;
+    }
+  }
+}
