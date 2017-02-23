@@ -1,0 +1,14 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: ($base-font-size / 16px) * 1em;
+  line-height: $base-line-height / $base-font-size;
+  padding: 0;
+  background-color: $color-font-black;
+  color: $color-font-clay;
+}
+
+body {
+  background-color: $color-bg-gray;
+  margin: 0 auto;
+  max-width: 1440px;
+}

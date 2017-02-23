@@ -7,7 +7,11 @@
 @import "generic.box-sizing";
 @import "generic.reset";
 @import "generic.shared";
+@import "elements.page";
 @import "elements.links";
 @import "elements.images";
+@import "component.header";
+@import "component.nav";
+@import "component.content";
 
-@import "components.buttons"
+@import "components.buttons";

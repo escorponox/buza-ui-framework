@@ -1,0 +1,71 @@
+.c-header {
+  background-color: $color-bg-gray-dark;
+  padding: 4.5rem;
+  padding-bottom: 0;
+}
+
+.c-header__title {
+  @include flex-container($spacing: space-between);
+  margin-bottom: 4rem;
+}
+
+.c-title {
+  margin-bottom: 0;
+}
+
+.c-header__search {
+  color: $color-font-clay;
+  height: 2.5em;
+  position: relative;
+}
+
+.c-search__input {
+  background-color: transparent;
+  border: 1px solid $color-font-clay;
+  border-radius: $base-radius 0 0 $base-radius;
+  color: $color-font-clay;
+  height: 2.5em;
+  padding: .25em .5em;
+  width: 13em;
+  margin-right: 2.5em;
+  display: inline-block;
+}
+
+.c-search__button {
+  bottom: 0;
+  position: absolute;
+  left: 13em;
+  z-index: 10;
+  border: 1px solid $color-font-clay;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  color: $color-font-clay;
+  cursor: pointer;
+  display: flex;
+  height: 2.5em;
+  transition: color 0.15s ease-out;
+  width: 2.5em;
+  align-items: center;
+  justify-content: center;
+
+  .fa-search {
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+  }
+}
+
+.c-search__placeholder {
+  color: $color-font-clay;
+  font-family: sans-serif;
+  display: inline-block;
+  left: .5em;
+  position: absolute;
+  top: .5em;
+  z-index: -1;
+}
+
+.c-search__input:focus ~ .c-search__placeholder,
+.c-search__input:valid ~ .c-search__placeholder {
+  display: none;
+}

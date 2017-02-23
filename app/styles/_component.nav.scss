@@ -1,0 +1,14 @@
+.c-nav {
+  @include flex-container(row, flex-end, flex-end)
+}
+
+.c-nav__link {
+  @include font-size(22px);
+  padding: $base-spacing-unit $base-radius;
+  margin-left: 4rem;
+
+  &.is-active {
+    color: $color-font-white;
+    border-bottom: 4px solid $color-font-highlight;
+  }
+}
