@@ -1,4 +1,5 @@
 import WebFont from 'webfontloader';
+import microLight from 'microlight';
 
 WebFont.load({
     google: {

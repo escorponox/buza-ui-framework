@@ -5,7 +5,8 @@
 }
 
 .c-button-container {
-  @include flex-container(column)
+  @include flex-container(column);
+  flex-shrink: 0;
 }
 
 .c-button-description {
