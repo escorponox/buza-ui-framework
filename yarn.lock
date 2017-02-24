@@ -4120,6 +4120,10 @@ merge-stream@^1.0.0:
   dependencies:
     readable-stream "^2.0.1"
 
+microlight@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/microlight/-/microlight-0.0.7.tgz#f3d7eb460acc11317bb32388b29930d54ba47890"
+
 micromatch@2.3.11, micromatch@^2.1.5, micromatch@^2.3.7, micromatch@^2.3.8:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
