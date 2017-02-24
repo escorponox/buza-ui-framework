@@ -1,0 +1,19 @@
+.c-footer {
+  @include flex-container(column);
+  background-color: $color-bg-gray;
+  padding: 4rem;
+}
+
+.c-dev-showcase {
+  @include flex-container($spacing: center);
+}
+
+.c-dev {
+  @include flex-container(column);
+  margin: 0 $base-spacing-unit-large;
+}
+
+.c-dev__img {
+  border-radius: 50%;
+  margin-bottom: $base-spacing-unit;
+}
