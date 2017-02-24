@@ -1,0 +1,37 @@
+.c-side-menu {
+  padding-top: 4rem;
+  flex-shrink: 0;
+}
+
+.c-side-menu__title {
+  color: $color-font-white;
+  padding-right: 4rem;
+  text-align: right;
+}
+
+.c-side-menu__links {
+  @include flex-container(column, flex-end);
+}
+
+.c-side-menu__link {
+  @include flex-container(column, flex-end);
+  @include font-size(18px);
+  font-weight: 700;
+  margin-bottom: $base-radius;
+  padding: 1rem 4rem 1rem 0;
+  position: relative;
+
+  &.is-active {
+    color: $color-font-highlight;
+
+    &:after {
+      content: '';
+      background-color: $color-font-highlight;
+      height: 3.5rem;
+      position: absolute;
+      right: -3px;
+      top: 0;
+      width: 6px;
+    }
+  }
+}
