@@ -14,9 +14,10 @@
   transition: color 0.2s cubic-bezier(0.4,0,0.2,1), border-color 0.2s cubic-bezier(0.4,0,0.2,1), background 0.2s cubic-bezier(0.4,0,0.2,1);
 
   &[disabled] {
+    border: 0;
     cursor: default;
     background: $color-font-gray;
-    color: #fff;
+    color: $color-white;
   }
 
   .fa {
@@ -27,9 +28,9 @@
 .c-button--basic {
   color: $color-maroon-darker;
   border-color: $color-maroon-darker;
-  background: #fff;
+  background: $color-white;
 
-  &:hover {
+  &:not([disabled]):hover {
     @extend .c-button--hover;
   }
 
@@ -39,15 +40,20 @@
 }
 
 .c-button--hover {
-  color: #fff;
+  color: $color-white;
   border-color: $color-maroon-input-bg;
   background: $color-maroon-input-bg;
 }
 
 .c-button--active {
-  color: #fff;
+  color: $color-white;
   border-color: $color-maroon-darker;
   background: $color-maroon-darker;
+}
+
+.c-button--rounded--active {
+  @extend .c-button--active;
+  border-radius: 20px;
 }
 
 .c-button--rounded {
@@ -79,49 +85,49 @@
       margin-left: -1px;
     }
 
-    &:hover {
+    &:not([disabled]):hover {
       position: relative;
       z-index: 2;
     }
   }
 
   .c-button--rounded {
-    color: #fff;
+    color: $color-white;
     border-color: $color-maroon-darker;
     background: $color-maroon-darker;
 
     &:not(:first-of-type) {
-      border-left-color: #fff;
+      border-left-color: $color-white;
     }
 
     &:active {
-      color: #fff;
+      color: $color-white;
       border-color: $color-maroon-input-bg;
       background: $color-maroon-input-bg;
     }
 
     &:first-of-type {
-      &:hover {
-        border-left-color: #000;
+      &:not([disabled]):hover {
+        border-left-color: $color-black;
       }
     }
 
     &:last-of-type {
-      &:hover {
-        border-right-color: #000;
+      &:not([disabled]):hover {
+        border-right-color: $color-black;
       }
     }
 
-    &:hover {
-      background: #000;
-      border-top-color: #000;
-      border-bottom-color: #000;
-      border-right-color: #fff;
+    &:not([disabled]):hover {
+      background: $color-black;
+      border-top-color: $color-black;
+      border-bottom-color: $color-black;
+      border-right-color: $color-white;
     }
 
     &:active {
-      border-right-color: #fff;
-      border-left-color: #fff;
+      border-right-color: $color-white;
+      border-left-color: $color-white;
     }
   }
 }
