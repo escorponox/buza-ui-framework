@@ -5,11 +5,9 @@ html {
 }
 
 * {
-
   &,
-  &:before,
-  &:after {
+  &:after,
+  &:before {
     text-rendering: inherit;
   }
-
 }
