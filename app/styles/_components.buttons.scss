@@ -24,18 +24,6 @@
   }
 }
 
-.c-button--hover {
-  color: #fff;
-  border-color: $color-maroon-input-bg;
-  background: $color-maroon-input-bg;
-}
-
-.c-button--active {
-  color: #fff;
-  border-color: $color-maroon-darker;
-  background: $color-maroon-darker;
-}
-
 .c-button--basic {
   color: $color-maroon-darker;
   border-color: $color-maroon-darker;
@@ -48,6 +36,18 @@
   &:active {
     @extend .c-button--active;
   }
+}
+
+.c-button--hover {
+  color: #fff;
+  border-color: $color-maroon-input-bg;
+  background: $color-maroon-input-bg;
+}
+
+.c-button--active {
+  color: #fff;
+  border-color: $color-maroon-darker;
+  background: $color-maroon-darker;
 }
 
 .c-button--rounded {

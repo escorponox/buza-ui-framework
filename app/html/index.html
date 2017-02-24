@@ -11,13 +11,14 @@
   <link rel="manifest" href="manifest.json">
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#151517">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:400">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
 <header class="c-header">
   <div class="c-header__title">
-    <h1 class="c-title" tabindex="0">Name of the UI Framework</h1>
+    <h1 class="c-title" tabindex="0">OF-UI Framework</h1>
     <div class="c-header__search">
       <input class="c-search__input" type="text" value="" required>
       <span class="c-search__placeholder">Search</span>
@@ -35,11 +36,99 @@
 
 <input id="modal-toggle" type="checkbox" style="display: none">
 
-<main class="c-content">
+<div class="c-content">
+  <div class="c-side-menu">
+    <h2 class="c-side-menu__title">UI COMPONENTS</h2>
+    <nav id="side-menu" class="c-side-menu__links">
+      <a href="#" class="c-side-menu__link is-active">BUTTONS</a>
+      <a href="#" class="c-side-menu__link">CARDS</a>
+      <a href="#" class="c-side-menu__link">ACCORDION</a>
+      <a href="#" class="c-side-menu__link">TABS</a>
+      <a href="#" class="c-side-menu__link">FORMS</a>
+      <a href="#" class="c-side-menu__link">PAGINATION</a>
+      <a href="#" class="c-side-menu__link">CAROUSEL</a>
+    </nav>
+  </div>
+  <main class="c-main">
+    <article class="c-article">
+      <h1>Buttons</h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <section class="c-section">
+        <h3>Basic</h3>
+        <div class="c-buttons-showcase">
+          <div class="c-button-container">
+            <button class="c-button c-button--basic">Primary</button>
+            <span class="c-button-description">Normal</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--hover">Primary</button>
+            <span class="c-button-description">Hover</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--active">Primary</button>
+            <span class="c-button-description">Active</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--basic"><i class="fa fa-send"></i>Send</button>
+            <span class="c-button-description">Normal</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button  c-button--hover c-button--basic"><i class="fa fa-user-plus"></i>Add User</button>
+            <span class="c-button-description">Hover</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button" disabled><i class="fa fa-cog"></i>Settings</button>
+            <span class="c-button-description">Disabled</span>
+          </div>
+        </div>
+        <div class="c-code-box">
+          CODE BOX HERE
+        </div>
+      </section>
+      <section class="c-section">
+        <h3>Rounded</h3>
+        <div class="c-buttons-showcase">
+          <div class="c-button-container">
+            <button class="c-button c-button--rounded c-button--basic">Primary</button>
+            <span class="c-button-description">Normal</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--rounded c-button--hover">Primary</button>
+            <span class="c-button-description">Hover</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--rounded c-button--active">Primary</button>
+            <span class="c-button-description">Active</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--rounded"><i class="fa fa-send"></i>Send</button>
+            <span class="c-button-description">Normal</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button  c-button--hover c-button--rounded"><i class="fa fa-user-plus"></i>Add User</button>
+            <span class="c-button-description">Hover</span>
+          </div>
+          <div class="c-button-container">
+            <button class="c-button c-button--rounded" disabled><i class="fa fa-cog"></i>Settings</button>
+            <span class="c-button-description">Disabled</span>
+          </div>
+        </div>
+        <div class="c-code-box">
+          CODE BOX HERE
+        </div>
+      </section>
+    </article>
+    <hr class="c-hr">
+    <article class="c-article">
+      <h1>Cards</h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      ...
+    </article>
+  </main>
+</div>
 
-</main>
-
-  <a href="/buttons.html">Buttons</a>
-  <script src="scripts/app.js"></script>
+<script src="scripts/app.js"></script>
 </body>
 </html>

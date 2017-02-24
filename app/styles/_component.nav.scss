@@ -3,8 +3,8 @@
 }
 
 .c-nav__link {
-  @include font-size(22px);
-  padding: $base-spacing-unit $base-radius;
+  @include font-size(20px);
+  padding: 2* $base-radius;
   margin-left: 4rem;
 
   &.is-active {

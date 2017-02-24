@@ -17,6 +17,7 @@
   color: $color-font-clay;
   height: 2.5em;
   position: relative;
+  z-index: 10;
 }
 
 .c-search__input {
@@ -24,29 +25,30 @@
   border: 1px solid $color-font-clay;
   border-radius: $base-radius 0 0 $base-radius;
   color: $color-font-clay;
+  display: inline-block;
   height: 2.5em;
+  margin-right: 2.5em;
   padding: .25em .5em;
   width: 13em;
-  margin-right: 2.5em;
-  display: inline-block;
 }
 
 .c-search__button {
-  bottom: 0;
-  position: absolute;
-  left: 13em;
-  z-index: 10;
+  @include flex-container(row, center, center);
   border: 1px solid $color-font-clay;
   border-left: none;
   border-radius: 0 4px 4px 0;
+  bottom: 0;
   color: $color-font-clay;
   cursor: pointer;
-  display: flex;
   height: 2.5em;
+  left: 13em;
+  position: absolute;
   transition: color 0.15s ease-out;
   width: 2.5em;
-  align-items: center;
-  justify-content: center;
+
+  &:hover {
+    color: $color-font-white;
+  }
 
   .fa-search {
     position: relative;
@@ -56,16 +58,16 @@
 }
 
 .c-search__placeholder {
-  color: $color-font-clay;
-  font-family: sans-serif;
+  @include font-size(18px);
+  color: darken($color-font-clay, 10%);
   display: inline-block;
   left: .5em;
   position: absolute;
-  top: .5em;
+  top: .4em;
   z-index: -1;
-}
 
-.c-search__input:focus ~ .c-search__placeholder,
-.c-search__input:valid ~ .c-search__placeholder {
-  display: none;
+  @at-root .c-search__input:focus ~ &,
+  .c-search__input:valid ~ & {
+    display: none;
+  }
 }
