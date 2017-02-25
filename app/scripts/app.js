@@ -1,5 +1,7 @@
 import WebFont from 'webfontloader';
 import microLight from 'microlight';
+import documentReady from './document-ready';
+import scrollManagement from './scroll-management';
 
 WebFont.load({
     google: {
@@ -9,6 +11,8 @@ WebFont.load({
         ],
     },
 });
+
+documentReady(scrollManagement);
 
 // https://webpack.github.io/docs/hot-module-replacement.html
 if (module.hot) {
