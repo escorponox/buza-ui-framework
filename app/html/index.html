@@ -36,21 +36,22 @@
 <input id="modal-toggle" type="checkbox" style="display: none">
 
 <div class="c-content">
-  <div class="c-side-menu">
+  <div id="side-menu" class="c-side-menu">
     <h2 class="c-side-menu__title">UI COMPONENTS</h2>
-    <nav id="side-menu" class="c-side-menu__links">
-      <a href="#" class="c-side-menu__link is-active">BUTTONS</a>
-      <a href="#" class="c-side-menu__link">CARDS</a>
+    <nav class="c-side-menu__links">
+      <a href="#buttons" class="c-side-menu__link is-active">BUTTONS</a>
+      <a href="#tabs" class="c-side-menu__link">TABS</a>
+      <a href="#cards" class="c-side-menu__link">CARDS</a>
       <a href="#" class="c-side-menu__link">ACCORDION</a>
-      <a href="#" class="c-side-menu__link">TABS</a>
       <a href="#" class="c-side-menu__link">FORMS</a>
       <a href="#" class="c-side-menu__link">PAGINATION</a>
       <a href="#" class="c-side-menu__link">CAROUSEL</a>
     </nav>
   </div>
-  <div class="c-main-content">
+  <div id="main-content" class="c-main-content">
     <main class="c-main">
-      <article class="c-article">
+
+      <article id="buttons" class="c-article">
         <h1>Buttons</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
           sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -153,129 +154,119 @@
         </section>
 
       </article>
+
       <hr class="c-hr">
 
-      <!-- tabs -->
-
-      <article class="c-article">
+      <article id="tabs" class="c-article">
         <h1>Tabs</h1>
         <p>Tabs are a magical way to share information with users.</p>
 
-        <!-- horizontal tabs -->
+        <section class="c-section">
 
-        <h2>Horizontal tabs</h2>
-        <p>Consider horizontal tabs when you have a smaller number of sections.</p>
+          <h2>Horizontal tabs</h2>
+          <p>Consider horizontal tabs when you have a smaller number of sections.</p>
 
-        <!-- horizontal stairs -->
+          <!-- horizontal stairs -->
 
-        <div class="c-tab__container">
-          <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-1--stairs" checked />
-          <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-2--stairs" />
-          <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-3--stairs" />
-          <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-4--stairs" />
-          <div class="c-tab__bar">
-            <nav class="c-tab-group">
-              <label class="c-tab__label--stairs c-tab-1--stairs" for="c-tab-1--stairs">Tab 1</label>
-              <label class="c-tab__label--stairs c-tab-2--stairs" for="c-tab-2--stairs">Tab 2</label>
-              <label class="c-tab__label--stairs c-tab-3--stairs" for="c-tab-3--stairs">Tab 3</label>
-              <label class="c-tab__label--stairs c-tab-4--stairs" for="c-tab-4--stairs">Tab 4</label>
-            </nav>
+          <div class="c-tab__container">
+            <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-1--stairs" checked/>
+            <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-2--stairs"/>
+            <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-3--stairs"/>
+            <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-4--stairs"/>
+            <div class="c-tab__bar">
+              <nav class="c-tab-group">
+                <label class="c-tab__label--stairs c-tab-1--stairs" for="c-tab-1--stairs">Tab 1</label>
+                <label class="c-tab__label--stairs c-tab-2--stairs" for="c-tab-2--stairs">Tab 2</label>
+                <label class="c-tab__label--stairs c-tab-3--stairs" for="c-tab-3--stairs">Tab 3</label>
+                <label class="c-tab__label--stairs c-tab-4--stairs" for="c-tab-4--stairs">Tab 4</label>
+              </nav>
+            </div>
+            <div class="c-tab__panel-group--stairs">
+              <div class="c-tab__panel c-tab__panel-1--stairs">
+              </div>
+              <div class="c-tab__panel c-tab__panel-2--stairs">
+              </div>
+              <div class="c-tab__panel c-tab__panel-3--stairs">
+              </div>
+              <div class="c-tab__panel c-tab__panel-4--stairs">
+              </div>
+            </div>
           </div>
-          <main class="c-tab__panel-group--stairs">
-            <section class="c-tab__panel c-tab__panel-1--stairs">
-            </section>
-            <section class="c-tab__panel c-tab__panel-2--stairs">
-            </section>
-            <section class="c-tab__panel c-tab__panel-3--stairs">
-            </section>
-            <section class="c-tab__panel c-tab__panel-4--stairs">
-            </section>
-          </main>
-        </div>
 
-        <!-- horizontal underline -->
+          <!-- horizontal underline -->
 
-        <div class="c-tab__container">
-          <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-1--underline" checked />
-          <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-2--underline"  />
-          <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-3--underline" />
-          <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-4--underline" />
-          <div class="c-tab__bar">
-            <nav class="c-tab-group">
-              <label class="c-tab__label--underline c-tab-1--underline" for="c-tab-1--underline">Tab 1</label>
-              <label class="c-tab__label--underline c-tab-2--underline" for="c-tab-2--underline">Tab 2</label>
-              <label class="c-tab__label--underline c-tab-3--underline" for="c-tab-3--underline">Tab 3</label>
-              <label class="c-tab__label--underline c-tab-4--underline" for="c-tab-4--underline">Tab 4</label>
-            </nav>
+          <div class="c-tab__container">
+            <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-1--underline" checked/>
+            <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-2--underline"/>
+            <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-3--underline"/>
+            <input class="c-tab__input" type="radio" name="tabs--underline" id="c-tab-4--underline"/>
+            <div class="c-tab__bar">
+              <nav class="c-tab-group">
+                <label class="c-tab__label--underline c-tab-1--underline" for="c-tab-1--underline">Tab 1</label>
+                <label class="c-tab__label--underline c-tab-2--underline" for="c-tab-2--underline">Tab 2</label>
+                <label class="c-tab__label--underline c-tab-3--underline" for="c-tab-3--underline">Tab 3</label>
+                <label class="c-tab__label--underline c-tab-4--underline" for="c-tab-4--underline">Tab 4</label>
+              </nav>
+            </div>
+            <div class="c-tab__panel-group--underline">
+              <div class="c-tab__panel c-tab__panel-1--underline">
+              </div>
+              <div class="c-tab__panel c-tab__panel-2--underline">
+              </div>
+              <div class="c-tab__panel c-tab__panel-3--underline">
+              </div>
+              <div class="c-tab__panel c-tab__panel-4--underline">
+              </div>
+            </div>
           </div>
-          <main class="c-tab__panel-group--underline">
-            <section class="c-tab__panel c-tab__panel-1--underline">
-            </section>
-            <section class="c-tab__panel c-tab__panel-2--underline">
-            </section>
-            <section class="c-tab__panel c-tab__panel-3--underline">
-            </section>
-            <section class="c-tab__panel c-tab__panel-4--underline">
-            </section>
-          </main>
-        </div>
 
-        <!-- horizontal folder -->
+          <!-- horizontal folder -->
 
-        <div class="c-tab__container">
-          <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-1--folder" checked />
-          <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-2--folder" />
-          <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-3--folder" />
-          <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-4--folder" />
-          <div class="c-tab__bar">
-            <nav class="c-tab-group">
-              <label class="c-tab__label--folder c-tab-1--folder" for="c-tab-1--folder">Tab 1</label>
-              <label class="c-tab__label--folder c-tab-2--folder" for="c-tab-2--folder">Tab 2</label>
-              <label class="c-tab__label--folder c-tab-3--folder" for="c-tab-3--folder">Tab 3</label>
-              <label class="c-tab__label--folder c-tab-4--folder" for="c-tab-4--folder">Tab 4</label>
-            </nav>
+          <div class="c-tab__container">
+            <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-1--folder" checked/>
+            <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-2--folder"/>
+            <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-3--folder"/>
+            <input class="c-tab__input" type="radio" name="tabs--folder" id="c-tab-4--folder"/>
+            <div class="c-tab__bar">
+              <nav class="c-tab-group">
+                <label class="c-tab__label--folder c-tab-1--folder" for="c-tab-1--folder">Tab 1</label>
+                <label class="c-tab__label--folder c-tab-2--folder" for="c-tab-2--folder">Tab 2</label>
+                <label class="c-tab__label--folder c-tab-3--folder" for="c-tab-3--folder">Tab 3</label>
+                <label class="c-tab__label--folder c-tab-4--folder" for="c-tab-4--folder">Tab 4</label>
+              </nav>
+            </div>
+            <div class="c-tab__panel-group--folder">
+              <div class="c-tab__panel c-tab__panel-1--folder">
+              </div>
+              <div class="c-tab__panel c-tab__panel-2--folder">
+              </div>
+              <div class="c-tab__panel c-tab__panel-3--folder">
+              </div>
+              <div class="c-tab__panel c-tab__panel-4--folder">
+              </div>
+            </div>
           </div>
-          <main class="c-tab__panel-group--folder">
-            <section class="c-tab__panel c-tab__panel-1--folder">
-            </section>
-            <section class="c-tab__panel c-tab__panel-2--folder">
-            </section>
-            <section class="c-tab__panel c-tab__panel-3--folder">
-            </section>
-            <section class="c-tab__panel c-tab__panel-4--folder">
-            </section>
-          </main>
-        </div>
-
+        </section>
       </article>
 
       <!-- placeholder content -->
 
       <template class="js-tab__template">
-        <article class="c-tab__feature">
-          <img class="c-tab__feature-image" src="../assets/images/sunglasses-200x220.png" alt="placeholder" />
+        <div class="c-tab__feature">
+          <img class="c-tab__feature-image" src="../assets/images/sunglasses-200x220.png" alt="placeholder"/>
           <div class="c-tab__feature-text">
             <time class="c-tab__feature-date">April 3, 2017</time>
             <h1 class="c-tab__feature-title">Paint on a Brick Wall</h1>
-            <p class="c-tab__feature-subtitle">Stop bickering or I'm going to come back there and change your opinions manually!  Robots 1-X, save my friends!  And Zoidberg!</p>
+            <p class="c-tab__feature-subtitle">Stop bickering or I'm going to come back there and change your opinions
+              manually! Robots 1-X, save my friends! And Zoidberg!</p>
             <button class="c-button c-button--basic c-tab__feature-button">Read more...</button>
           </div>
-        </article>
+        </div>
       </template>
-
-      <!-- inject placeholder content into tabs -->
-
-      <script>
-        const panelArray = document.querySelectorAll(".c-tab__panel");
-        for(var i = 0; i < panelArray.length; i++) {
-          const tabsTemplate = document.querySelector(".js-tab__template").content.cloneNode(true);
-          panelArray[i].appendChild(tabsTemplate);  
-        }
-      </script>
 
       <hr class="c-hr">
 
-      <article class="c-article">
+      <article id="cards" class="c-article">
         <h1>Cards</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
           sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
