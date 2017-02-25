@@ -1,6 +1,11 @@
 .c-side-menu {
   padding-top: 4rem;
   flex-shrink: 0;
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+  }
 }
 
 .c-side-menu__title {
@@ -32,6 +37,7 @@
       right: -3px;
       top: 0;
       width: 6px;
+      z-index: 10;
     }
   }
 }
