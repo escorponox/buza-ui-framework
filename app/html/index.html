@@ -473,26 +473,26 @@
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
           <section class="c-section">
-            <div class="c-carousel is-set">
+            <div class="c-carousel is-set" style="margin-bottom: 24px">
               <ul class="c-carousel__canvas">
                 <li class="c-carousel__seat">
-                  Foo
+                  <img src="http://placekitten.com/748/400" alt="" />
                 </li>
                 <li class="c-carousel__seat">
-                  Bar
+                  <img src="http://placekitten.com/748/400" alt="" />
                 </li>
                 <li class="c-carousel__seat is-reference">
-                  Baz
+                  <img src="http://placekitten.com/748/400" alt="" />
                 </li>
               </ul>
-            </div>
-            <div class="c-carousel__controls">
-              <button class="c-button c-button--hover js-carousel__controls--prev">
-                Previous
-              </button>
-              <button class="c-button c-button--hover js-carousel__controls--next">
-                Next
-              </button>
+              <div class="c-carousel__controls">
+                <a href="#" class="js-carousel__controls--prev">
+                  <i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="js-carousel__controls--next">
+                  <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
             <div class="c-code-box">
               <input id="code-box-999"
@@ -513,15 +513,19 @@
               <div class="c-code-box__code">
                 <pre>
                   <code class="microlight">
-&lt;a class="c-button c-button--basic"&gt;
-  Primary
-&lt;/a&gt;
-&lt;div class="c-button c-button--basic"&gt;
-  &lt;i class="fa fa-send"&gt;&lt;/i&gt; Send
-&lt;/div&gt;
-&lt;button class="c-button c-button--basic" disabled&gt;
-  &lt;i class="fa fa-cog"&gt;&lt;/i&gt; Settings
-&lt;/button&gt;
+&#x3C;div class=&#x22;c-carousel is-set&#x22;&#x3E;
+  &#x3C;ul class=&#x22;c-carousel__canvas&#x22;&#x3E;
+    &#x3C;li class=&#x22;c-carousel__seat&#x22;&#x3E;
+      &#x3C;img src=&#x22;http://placekitten.com/748/400&#x22; alt=&#x22;&#x22; /&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;c-carousel__seat&#x22;&#x3E;
+      &#x3C;img src=&#x22;http://placekitten.com/748/400&#x22; alt=&#x22;&#x22; /&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;c-carousel__seat is-reference&#x22;&#x3E;
+      &#x3C;img src=&#x22;http://placekitten.com/748/400&#x22; alt=&#x22;&#x22; /&#x3E;
+    &#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
                   </code>
                 </pre>
               </div>
