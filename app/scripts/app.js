@@ -12,7 +12,17 @@ WebFont.load({
     },
 });
 
+const injectPlaceholderIntoTabs = () => {
+  const panelArray = Array.from(document.querySelectorAll(".c-tab__panel"));
+  panelArray.forEach((panel, index) => {
+    const tabsTemplate = document.querySelector(".js-tab__template").content.cloneNode(true);
+    tabsTemplate.firstElementChild.children[1].children[1].innerHTML = `Paint on a Brick ${index}`;
+    panel.appendChild(tabsTemplate);
+  })
+};
+
 documentReady(scrollManagement);
+documentReady(injectPlaceholderIntoTabs);
 
 // https://webpack.github.io/docs/hot-module-replacement.html
 if (module.hot) {

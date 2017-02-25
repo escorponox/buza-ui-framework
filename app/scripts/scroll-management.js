@@ -6,7 +6,7 @@ export default () => {
   const header = document.querySelector('header');
   const mainContent = document.getElementById('main-content');
   const sideMenu = document.getElementById('side-menu');
-  const articles = document.querySelectorAll('article');
+  const articles = document.querySelectorAll('.c-article');
   const articlesLinks = document.querySelectorAll('.c-side-menu__link');
 
   const sideMenuStickyHandler = () => {
