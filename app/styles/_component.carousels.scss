@@ -12,26 +12,26 @@
   position: relative;
   transform: translateX(100%);
 
-  @media (min-width: 30em) {
-    left: -50%;
-    transform: translateX(50%);
-  }
+  // @media (min-width: 30em) {
+  //   left: -50%;
+  //   transform: translateX(50%);
+  // }
 
-  @media (min-width: 40em) {
-    left: -33.33333%;
-    transform: translateX(33.33333%);
-  }
+  // @media (min-width: 40em) {
+  //   left: -33.33333%;
+  //   transform: translateX(33.33333%);
+  // }
 
   &.is-reversing {
     transform: translateX(-100%);
 
-    @media (min-width: 30em) {
-      transform: translateX(-50%);
-    }
+    // @media (min-width: 30em) {
+    //   transform: translateX(-50%);
+    // }
 
-    @media (min-width: 40em) {
-      transform: translateX(-33.33333%);
-    }
+    // @media (min-width: 40em) {
+    //   transform: translateX(-33.33333%);
+    // }
   }
 
   &.is-set {
@@ -54,13 +54,13 @@
     order: 1;
   }
 
-  @media (min-width: 30em) {
-    flex-basis: 50%;
-  }
+  // @media (min-width: 30em) {
+  //   flex-basis: 50%;
+  // }
 
-  @media (min-width: 40em) {
-    flex-basis: 33.33333%;
-  }
+  // @media (min-width: 40em) {
+  //   flex-basis: 33.33333%;
+  // }
 }
 
 .c-carousel__controls {
