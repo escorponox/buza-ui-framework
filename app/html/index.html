@@ -75,7 +75,7 @@
         <a href="#" class="c-side-menu__link">
           PAGINATION
         </a>
-        <a href="#" class="c-side-menu__link">
+        <a href="#carousels" class="c-side-menu__link">
           CAROUSEL
         </a>
       </nav>
@@ -459,6 +459,74 @@
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
           ...
+        </article>
+
+        <hr class="c-hr">
+
+        <article id="carousels" class="c-article">
+          <h1>
+            Carousels
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+          <section class="c-section">
+            <div class="c-carousel is-set">
+              <ul class="c-carousel__canvas">
+                <li class="c-carousel__seat">
+                  Foo
+                </li>
+                <li class="c-carousel__seat">
+                  Bar
+                </li>
+                <li class="c-carousel__seat is-reference">
+                  Baz
+                </li>
+              </ul>
+            </div>
+            <div class="c-carousel__controls">
+              <button class="c-button c-button--hover js-carousel__controls--prev">
+                Previous
+              </button>
+              <button class="c-button c-button--hover js-carousel__controls--next">
+                Next
+              </button>
+            </div>
+            <div class="c-code-box">
+              <input id="code-box-999"
+                     type="checkbox"
+                     class="c-code-box__toggle"
+                     checked="checked" />
+              <div class="c-code-box__header">
+                <label for="code-box-999" class="c-code-box__label">
+                  &lt;/&gt;
+                </label>
+                <label for="code-box-999" class="c-code-box__label">
+                  hide markup
+                </label>
+                <label for="code-box-999" class="c-code-box__label">
+                  show markup
+                </label>
+              </div>
+              <div class="c-code-box__code">
+                <pre>
+                  <code class="microlight">
+&lt;a class="c-button c-button--basic"&gt;
+  Primary
+&lt;/a&gt;
+&lt;div class="c-button c-button--basic"&gt;
+  &lt;i class="fa fa-send"&gt;&lt;/i&gt; Send
+&lt;/div&gt;
+&lt;button class="c-button c-button--basic" disabled&gt;
+  &lt;i class="fa fa-cog"&gt;&lt;/i&gt; Settings
+&lt;/button&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </section>
         </article>
       </main>
       <footer class="c-footer">

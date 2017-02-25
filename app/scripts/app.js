@@ -2,6 +2,7 @@ import WebFont from 'webfontloader';
 import microLight from 'microlight';
 import documentReady from './document-ready';
 import scrollManagement from './scroll-management';
+import carousels from './carousels';
 
 WebFont.load({
     google: {
@@ -18,9 +19,10 @@ const injectPlaceholderIntoTabs = () => {
     const tabsTemplate = document.querySelector(".js-tab__template").content.cloneNode(true);
     tabsTemplate.firstElementChild.children[1].children[1].innerHTML = `Paint on a Brick ${index}`;
     panel.appendChild(tabsTemplate);
-  })
+  });
 };
 
+documentReady(carousels);
 documentReady(scrollManagement);
 documentReady(injectPlaceholderIntoTabs);
 
@@ -28,3 +30,4 @@ documentReady(injectPlaceholderIntoTabs);
 if (module.hot) {
     module.hot.accept();
 }
+
