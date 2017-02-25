@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <title>Checkboxes</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body > label {
+      width: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <label class="c-checkbox c-checkbox--black" for="checkbox-1">
+    <input class="c-checkbox__input" id="checkbox-1" type="checkbox">
+    <span class="c-checkbox__label">Checkbox 1</span>
+    <span class="c-checkbox__outline">
+      <i class="fa fa-check" aria-hidden="true"></i>
+    </span>
+  </label>
+
+  <label class="c-checkbox c-checkbox--black" for="checkbox-2">
+    <input class="c-checkbox__input" id="checkbox-2" type="checkbox">
+    <span class="c-checkbox__label">Checkbox 2</span>
+    <span class="c-checkbox__outline">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </span>
+  </label>
+
+  <label class="c-checkbox c-checkbox--maroon" for="checkbox-3">
+    <input class="c-checkbox__input" id="checkbox-3" type="checkbox">
+    <span class="c-checkbox__label">Checkbox 3</span>
+    <span class="c-checkbox__outline">
+      <i class="fa fa-check" aria-hidden="true"></i>
+    </span>
+  </label>
+
+  <label class="c-checkbox c-checkbox--maroon c-checkbox--maroon-outline" for="checkbox-4">
+    <input class="c-checkbox__input" id="checkbox-4" type="checkbox">
+    <span class="c-checkbox__label">Checkbox 4</span>
+    <span class="c-checkbox__outline">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </span>
+  </label>
+</body>
+</html>
