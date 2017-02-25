@@ -9,7 +9,7 @@ export default () => {
   const articles = document.querySelectorAll('.c-article');
   const articlesLinks = document.querySelectorAll('.c-side-menu__link');
 
-  const sideMenuStickyHandler = () => {
+  const sideMenuStickyHandler = throttle(() => {
     const topOffset = header.offsetHeight + mainContent.offsetTop;
     const leftOffset = header.offsetLeft + sideMenu.offsetLeft;
 
@@ -22,7 +22,7 @@ export default () => {
       sideMenu.classList.remove('is-fixed');
       sideMenu.style.left = '';
     }
-  };
+  }, 100);
 
   const highlightArticle = throttle(() => {
     const sectionId = menuHighlight(articles);
