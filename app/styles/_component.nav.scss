@@ -4,11 +4,11 @@
 
 .c-nav__link {
   @include font-size(20px);
-  padding: 2* $base-radius;
   margin-left: 4rem;
+  padding: 2* $base-radius;
 
   &.is-active {
-    color: $color-font-white;
     border-bottom: 4px solid $color-font-highlight;
+    color: $color-font-white;
   }
 }

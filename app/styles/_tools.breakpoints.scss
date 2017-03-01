@@ -6,4 +6,6 @@ $mq-desktop: 1000px;
   @media only screen and (min-width: $min-width) {
     @content
   }
-};
+}
+
+;

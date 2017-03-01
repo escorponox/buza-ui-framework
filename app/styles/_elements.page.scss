@@ -1,10 +1,10 @@
 html {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont,  'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell',  'Fira Sans', 'Droid Sans', 'Helvetica Neue',  sans-serif;
+  background-color: $color-font-black;
+  color: $color-font-clay;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: ($base-font-size / 16px) * 1em;
   line-height: $base-line-height / $base-font-size;
   padding: 0;
-  background-color: $color-font-black;
-  color: $color-font-clay;
 }
 
 body {

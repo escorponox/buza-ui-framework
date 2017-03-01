@@ -24,7 +24,7 @@
   }
 
   @at-root .c-code-box__toggle:checked + & {
-    color: $color-maroon-darker;
+    color: $color-maroon;
 
     &:hover {
       color: $color-maroon-input-bg;
@@ -43,10 +43,10 @@
 .c-code-box__label {
   cursor: pointer;
   flex-grow: 1;
-  user-select: none;
   &:not(:first-of-type) {
     text-align: right;
   }
+  user-select: none;
 }
 
 .c-code-box__code {

@@ -1,23 +1,22 @@
 .c-checkbox {
-  position: relative;
-  vertical-align: middle;
   display: inline-block;
-  width: 100%;
   height: 24px;
   margin: 0;
   padding: 0;
   padding-left: 32px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .c-checkbox__input {
-  position: absolute;
-  width: 0;
+  border: 0;
   height: 0;
   margin: 0;
-  padding: 0;
   opacity: 0;
-  border: 0;
-  appearance: none;
+  padding: 0;
+  position: absolute;
+  width: 0;
 
   &:checked {
     ~ .c-checkbox__outline .fa {
@@ -27,49 +26,49 @@
 }
 
 .c-checkbox__label {
-  position: relative;
+  color: $color-maroon-lighter1;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   margin: 0;
+  position: relative;
   vertical-align: middle;
-  color: $color-maroon-lighter1;
-  font-weight: 500;
   user-select: none;
 }
 
 .c-checkbox__outline {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
   border: 1px solid transparent;
   border-radius: 2px;
-  transition: border-color 0.2s cubic-bezier(0.4,0,0.2,1), background 0.2s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 18px;
 
   .fa {
     color: #fff;
-    transition: opacity 0.2s cubic-bezier(0.4,0,0.2,1);
     opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .fa-check {
-    position: absolute;
-    top: -0.1875rem;
-    left: 0.125rem;
     font-size: 20px;
     font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: -0.1875rem;
   }
 
   .fa-times {
-    position: absolute;
-    top: -0.15625rem;
-    left: 0.03125rem;
     font-size: 20px;
     font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: -2px;
   }
 }
 

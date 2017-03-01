@@ -2,101 +2,122 @@
   display: block;
   margin: 100px 0 100px 0;
 }
+
 @media screen and (min-width: 1280px) {
   .c-card__section {
     display: flex;
     align-items: center;
   }
 }
+
 .c-card__teaser {
   order: 2;
 }
+
 @media screen and (min-width: 1280px) {
   .c-card__teaser {
-  padding-left: 64px;
+    padding-left: 64px;
   }
 }
+
 .c-card_teaser-title {
   margin: 0 0 20px 0;
 }
+
 .c-card__container {
+  flex: none;
   height: 470px;
   width: 325px;
   order: 1;
-  flex: none;
 }
+
 .c-card__container--cta {
   border: 1px solid $color-font-black;
   border-radius: 3px;
   height: 315px !important;
 }
+
 .c-card__nav--cta {
-  background-color: $color-maroon;;
-  height: 64px;
-  display: flex;
   align-items: center;
+  background-color: $color-maroon;;
+  display: flex;
+  height: 64px;
   justify-content: flex-end;
 }
+
 .c-card__image {
-  height: 185px;
   border-radius: 3px 3px 0 0;
+  height: 185px;
 }
+
 .c-card__profile-image {
   border-radius: 50%;
   height: 120px;
   width: 120px;
 }
+
 .c-card__body {
-  padding: 24px;
   border: 1px solid $color-font-black;
   border-radius: 0 0 3px 3px;
+  padding: 24px;
 }
+
 .c-card__body--contact {
+  align-items: center;
+  border: 1px solid $color-font-black;
+  border-radius: 0 0 3px 3px;
+  border-top: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 310px;
   position: relative;
   top: -60px;
-  border: 1px solid $color-font-black;
-  border-top: none;
-  height: 310px;
-  border-radius: 0 0 3px 3px;
 }
+
 .c-card__body--cta {
   padding: 24px;
 }
+
 .c-card__date {
   color: $color-font-gray;
   font-size: 14px;
   font-weight: 500;
 }
+
 .c-card__title {
   color: $color-font-black;
   margin: 20px 0 20px 0;
 }
+
 .c-card__title--card {
   color: $color-maroon;
-  font-weight: 300;
   font-size: 35px;
+  font-weight: 300;
   margin: 20px 0 8px 0;
 }
+
 .c-card__horizontal-rule {
   border-color: $color-maroon;
 }
+
 .c-card__horizontal-rule--contact {
   border-color: $color-code-text;
   width: 200px;
 }
+
 .c-subtitle {
   color: $color-font-black;
 }
+
 .c-card-button {
   display: block !important; /* override inline default */
   margin-left: auto;
 }
+
 .c-card-button--cta {
-  margin: 0 24px 24px 24px ;
+  margin: 0 24px 24px 24px;
 }
+
 .c-card-icon {
   color: $color-font-gray;
   padding: 0 30px 0 30px;

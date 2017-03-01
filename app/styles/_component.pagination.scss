@@ -1,6 +1,6 @@
 .c-pagination {
-  display: flex;
   align-items: center;
+  display: flex;
   list-style: none;
 
   li {
@@ -36,12 +36,12 @@
 }
 
 %c-pagination--variations-fonts {
-  display: flex;
   align-items: center;
-  justify-content: center;
   border: 1px solid $color-maroon-lighter1;
-  width: 32px;
+  display: flex;
   height: 32px;
+  justify-content: center;
+  width: 32px;
 }
 
 .c-pagination--round {
@@ -60,17 +60,17 @@
 }
 
 .c-pagination__item {
-  margin-right: 32px;
   font-size: 14px;
+  margin-right: 32px;
 
   &:nth-last-child(2) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &.disabled {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   &.current {

@@ -1,23 +1,23 @@
 .c-button {
   border: 1px solid transparent;
   border-radius: 2px;
-  height: 36px;
-  padding: 0 20px;
-  min-width: 64px;
-  display: inline-block;
-  outline: none;
   cursor: pointer;
-  text-align: center;
-  line-height: 36px;
-  vertical-align: middle;
+  display: inline-block;
   font-weight: 500;
-  transition: color 0.2s cubic-bezier(0.4,0,0.2,1), border-color 0.2s cubic-bezier(0.4,0,0.2,1), background 0.2s cubic-bezier(0.4,0,0.2,1);
+  height: 36px;
+  line-height: 36px;
+  min-width: 64px;
+  outline: none;
+  padding: 0 20px;
+  text-align: center;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
 
   &[disabled] {
-    border: 0;
-    cursor: default;
     background: $color-font-gray;
+    border: 0;
     color: $color-white;
+    cursor: default;
   }
 
   .fa {
@@ -26,9 +26,9 @@
 }
 
 .c-button--basic {
-  color: $color-maroon-darker;
-  border-color: $color-maroon-darker;
   background: $color-white;
+  border-color: $color-maroon;
+  color: $color-maroon;
 
   &:not([disabled]):hover {
     @extend .c-button--hover;
@@ -40,15 +40,15 @@
 }
 
 .c-button--hover {
-  color: $color-white;
-  border-color: $color-maroon-input-bg;
   background: $color-maroon-input-bg;
+  border-color: $color-maroon-input-bg;
+  color: $color-white;
 }
 
 .c-button--active {
+  background: $color-maroon;
+  border-color: $color-maroon;
   color: $color-white;
-  border-color: $color-maroon-darker;
-  background: $color-maroon-darker;
 }
 
 .c-button--rounded--active {
@@ -61,7 +61,6 @@
   border-radius: 20px;
 }
 
-
 .c-button-group {
   display: flex;
 
@@ -71,14 +70,14 @@
     }
 
     &:first-of-type {
-      border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
       margin-left: 0;
     }
 
     &:last-of-type {
-      border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
 
     + .c-button {
@@ -92,18 +91,18 @@
   }
 
   .c-button--rounded {
+    background: $color-maroon;
+    border-color: $color-maroon;
     color: $color-white;
-    border-color: $color-maroon-darker;
-    background: $color-maroon-darker;
 
     &:not(:first-of-type) {
       border-left-color: $color-white;
     }
 
     &:active {
-      color: $color-white;
-      border-color: $color-maroon-input-bg;
       background: $color-maroon-input-bg;
+      border-color: $color-maroon-input-bg;
+      color: $color-white;
     }
 
     &:first-of-type {
@@ -120,14 +119,14 @@
 
     &:not([disabled]):hover {
       background: $color-black;
-      border-top-color: $color-black;
       border-bottom-color: $color-black;
       border-right-color: $color-white;
+      border-top-color: $color-black;
     }
 
     &:active {
-      border-right-color: $color-white;
       border-left-color: $color-white;
+      border-right-color: $color-white;
     }
   }
 }

@@ -1,33 +1,39 @@
 .c-accordion__input {
   display: none;
 }
+
 .c-accordion__overview {
-  display: block;
   background-color: black;
   border-bottom: 1px solid rgba(0, 0, 0, .12);
   cursor: pointer;
+  display: block;
   margin-top: 1px;
 }
+
 .c-accordion__content {
-  display: none;
   background-color: #fff;
+  display: none;
 }
+
 .c-accordion__input:checked ~ .c-accordion__content {
   display: block;
 }
+
 .c-accordion__title {
-  padding: 16px 12px 12px 20px;
-  margin: 0;
   color: $color-font-gray;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 16px 12px 12px 20px;
 }
+
 .c-accordion-panels {
-  padding: 24px;
   border-top: 3px solid $color-maroon;
+  padding: 24px;
 }
+
 .c-accordion-panel__title {
-  font-size: 14px;
   color: rgba(0, 0, 0, .54);
+  font-size: 14px;
   line-height: 20px;
 }
