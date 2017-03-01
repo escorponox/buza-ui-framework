@@ -10,5 +10,5 @@ html {
 body {
   background-color: $color-bg-gray;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: $content-max-width;
 }

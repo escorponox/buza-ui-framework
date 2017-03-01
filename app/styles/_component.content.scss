@@ -1,6 +1,9 @@
 .c-content {
-  @include flex-container(row, stretch);
+  @include flex-container(row, flex-start);
   background-color: $color-bg-gray;
   padding: 4rem;
-  position: relative;
+}
+
+.c-main-content {
+  max-width: $content-max-width;
 }

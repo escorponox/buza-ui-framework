@@ -9,7 +9,7 @@ import config from '../config';
 const $ = gulpLoadPlugins();
 const ENV_PRODUCTION = process.env.NODE_ENV === 'production';
 
-const browsers = [
+const browsers = ENV_PRODUCTION ? [
     'ff >= 30',
     'chrome >= 34',
     'safari >= 7',
@@ -19,7 +19,7 @@ const browsers = [
     'ios >= 7',
     'android >= 4.4',
     'bb >= 10',
-];
+] : [ 'last 1 chrome version'];
 
 export default function styles() {
     return gulp.src(path.join(config.css.src, '/**/*.{sass,scss,css}'))

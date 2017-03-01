@@ -1,0 +1,33 @@
+.c-table {
+  background-color: $color-maroon-lighter5;
+  border: 1px solid $color-maroon;
+  border-radius: $base-radius;
+}
+
+.c-table--responsive {
+  overflow-x: auto;
+
+  .c-table__head,
+  .c-table__cell {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.c-table__header {
+  background-color: $color-maroon-lighter4;
+  color: $color-maroon-darker1;
+
+}
+
+.c-table__head {
+  border-radius: $base-radius;
+  color: $color-maroon-darker1;
+  padding: 0.5rem;
+}
+
+.c-table__cell {
+  color: $color-maroon;
+  font-weight: 400;
+  padding: 0.5rem;
+}

@@ -46,6 +46,7 @@
     <nav class="c-side-menu__links">
       <a href="#columns" class="c-side-menu__link is-active">COLUMN LAYOUT</a>
       <a href="#lists" class="c-side-menu__link">LISTS</a>
+      <a href="#tables" class="c-side-menu__link">TABLES</a>
       <a href="#buttons" class="c-side-menu__link">BUTTONS</a>
       <a href="#tabs" class="c-side-menu__link">TABS</a>
       <a href="#cards" class="c-side-menu__link">CARDS</a>
@@ -208,6 +209,150 @@
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <hr class="c-hr">
+
+      <article id="tables" class="c-article">
+        <h1>Tables</h1>
+        <p>Tables are a clever way to display data</p>
+        <section class="c-section">
+          <h3>Table</h3>
+          <div class="c-showcase">
+            <table class="c-table">
+              <thead>
+              <tr class="c-table__header">
+                <th class="c-table__head">Field 1</th>
+                <th class="c-table__head">Field 2</th>
+                <th class="c-table__head">Field 3</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="c-table__row">
+                <th class="c-table__cell">Value 1</th>
+                <th class="c-table__cell">Value 2</th>
+                <th class="c-table__cell">Value 3</th>
+              </tr>
+              <tr class="c-table__row">
+                <th class="c-table__cell">Value 1</th>
+                <th class="c-table__cell">Value 2</th>
+                <th class="c-table__cell">Value 3</th>
+              </tr>
+              <tr class="c-table__row">
+                <th class="c-table__cell">Value 1</th>
+                <th class="c-table__cell">Value 2</th>
+                <th class="c-table__cell">Value 3</th>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-table--responsive" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <div class="c-code-box__header">
+              <label for="code-box-table--responsive" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-table--responsive" class="c-code-box__label">hide markup</label>
+              <label for="code-box-table--responsive" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+              <pre><code class="microlight">&lt;table class="c-table"&gt;
+  &lt;thead&gt;
+  &lt;tr class="c-table__header"&gt;
+    &lt;th class="c-table__head"&gt;Field 1&lt;/th&gt;
+    &lt;th class="c-table__head"&gt;Field 2&lt;/th&gt;
+    &lt;th class="c-table__head"&gt;Field 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr class="c-table__row"&gt;
+    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="c-table__row"&gt;
+    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="c-table__row"&gt;
+    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <h3>Table Responsive</h3>
+          <p>This table won't wrap text and will scroll horizontally when needed</p>
+          <div class="c-showcase">
+            <div class="c-table--responsive">
+              <table class="c-table">
+                <tr class="c-table__header">
+                  <th class="c-table__head">Field 1
+                  </th>
+                  <th class="c-table__head">Field 2</th>
+                  <th class="c-table__head">Field 3</th>
+                </tr>
+                <tr class="c-table__row">
+                  <th class="c-table__cell">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                  </th>
+                  <th class="c-table__cell">Value 2</th>
+                  <th class="c-table__cell">Value 3</th>
+                </tr>
+                <tr class="c-table__row">
+                  <th class="c-table__cell">Value 1</th>
+                  <th class="c-table__cell">Value 2</th>
+                  <th class="c-table__cell">Value 3</th>
+                </tr>
+                <tr class="c-table__row">
+                  <th class="c-table__cell">Value 1</th>
+                  <th class="c-table__cell">Value 2</th>
+                  <th class="c-table__cell">Value 3</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-table" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <div class="c-code-box__header">
+              <label for="code-box-table" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-table" class="c-code-box__label">hide markup</label>
+              <label for="code-box-table" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+              <pre><code class="microlight">&lt;div class="c-table--responsive"&gt;
+  &lt;table class="c-table"&gt;
+    &lt;tr class="c-table__header"&gt;
+      &lt;th class="c-table__head"&gt;Field 1
+      &lt;/th&gt;
+      &lt;th class="c-table__head"&gt;Field 2&lt;/th&gt;
+      &lt;th class="c-table__head"&gt;Field 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr class="c-table__row"&gt;
+      &lt;th class="c-table__cell"&gt;Lorem ipsum dolor ...&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr class="c-table__row"&gt;
+      &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr class="c-table__row"&gt;
+      &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
+      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
