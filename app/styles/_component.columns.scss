@@ -1,0 +1,92 @@
+.c-column-layout {
+  background-color: $color-maroon-lighter5;
+  border: 1px solid $color-maroon;
+  border-radius: $base-radius;
+  padding: 1rem;
+}
+
+.c-cl-row {
+  @include flex-container(row, stretch);
+  margin-bottom: $base-spacing-unit / 2;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+%c-cl-col {
+  background-color: $color-maroon-lighter4;
+  border: 1px solid $color-maroon;
+  border-radius: $base-radius;
+  color: $color-maroon-darker1;
+  margin: 0 $base-radius;
+  padding: $base-radius;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.c-cl-col-1 {
+  @extend %c-cl-col;
+  width: 8.33%;
+}
+
+.c-cl-col-2 {
+  @extend %c-cl-col;
+  width: 16.66%;
+}
+
+.c-cl-col-3 {
+  @extend %c-cl-col;
+  width: 25%;
+}
+
+.c-cl-col-4 {
+  @extend %c-cl-col;
+  width: 33.33%;
+}
+
+.c-cl-col-5 {
+  @extend %c-cl-col;
+  width: 41.66%;
+}
+
+.c-cl-col-6 {
+  @extend %c-cl-col;
+  width: 50%;
+}
+
+.c-cl-col-7 {
+  @extend %c-cl-col;
+  width: 58.33%;
+}
+
+.c-cl-col-8 {
+  @extend %c-cl-col;
+  width: 66.66%;
+}
+
+.c-cl-col-9 {
+  @extend %c-cl-col;
+  width: 75%;
+}
+
+.c-cl-col-10 {
+  @extend %c-cl-col;
+  width: 83.33%;
+}
+
+.c-cl-col-11 {
+  @extend %c-cl-col;
+  width: 91.66%;
+}
+
+.c-cl-col-12 {
+  @extend %c-cl-col;
+  width: 100%;
+}

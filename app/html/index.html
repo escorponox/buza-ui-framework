@@ -44,7 +44,8 @@
   <div id="side-menu" class="c-side-menu">
     <h2 class="c-side-menu__title">UI COMPONENTS</h2>
     <nav class="c-side-menu__links">
-      <a href="#buttons" class="c-side-menu__link is-active">BUTTONS</a>
+      <a href="#columns" class="c-side-menu__link is-active">COLUMN LAYOUT</a>
+      <a href="#buttons" class="c-side-menu__link">BUTTONS</a>
       <a href="#tabs" class="c-side-menu__link">TABS</a>
       <a href="#cards" class="c-side-menu__link">CARDS</a>
       <a href="#accordion" class="c-side-menu__link">ACCORDION</a>
@@ -55,6 +56,121 @@
   </div>
   <div id="main-content" class="c-main-content">
     <main class="c-main">
+      <article id="columns" class="c-article">
+        <h1>Column Layout</h1>
+        <p>12 columns layout is a basic component in every UI framework</p>
+        <section class="c-section">
+          <div class="c-showcase c-column-layout">
+            <div class="c-cl-row">
+              <div class="c-cl-col-1">col-1</div>
+              <div class="c-cl-col-11">col-11</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-2">col-2</div>
+              <div class="c-cl-col-10">col-10</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-3">col-3</div>
+              <div class="c-cl-col-9">col-9</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-4">col-4</div>
+              <div class="c-cl-col-8">col-8</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-5">col-5</div>
+              <div class="c-cl-col-7">col-7</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-6">col-6</div>
+              <div class="c-cl-col-6">col-6</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-7">col-7</div>
+              <div class="c-cl-col-5">col-5</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-8">col-8</div>
+              <div class="c-cl-col-4">col-4</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-9">col-9</div>
+              <div class="c-cl-col-3">col-3</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-10">col-10</div>
+              <div class="c-cl-col-2">col-2</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-11">col-11</div>
+              <div class="c-cl-col-1">col-1</div>
+            </div>
+            <div class="c-cl-row">
+              <div class="c-cl-col-12">col-12</div>
+            </div>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-cl" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <div class="c-code-box__header">
+              <label for="code-box-cl" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-cl" class="c-code-box__label">hide markup</label>
+              <label for="code-box-cl" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+                <pre><code class="microlight">&lt;div class="c-showcase c-column-layout"&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-1"&gt;col-1&lt;/div&gt;
+    &lt;div class="c-cl-col-11"&gt;col-11&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-2"&gt;col-2&lt;/div&gt;
+    &lt;div class="c-cl-col-10"&gt;col-10&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-3"&gt;col-3&lt;/div&gt;
+    &lt;div class="c-cl-col-9"&gt;col-9&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-4"&gt;col-4&lt;/div&gt;
+    &lt;div class="c-cl-col-8"&gt;col-8&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-5"&gt;col-5&lt;/div&gt;
+    &lt;div class="c-cl-col-7"&gt;col-7&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-6"&gt;col-6&lt;/div&gt;
+    &lt;div class="c-cl-col-6"&gt;col-6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-7"&gt;col-7&lt;/div&gt;
+    &lt;div class="c-cl-col-5"&gt;col-5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-8"&gt;col-8&lt;/div&gt;
+    &lt;div class="c-cl-col-4"&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-9"&gt;col-9&lt;/div&gt;
+    &lt;div class="c-cl-col-3"&gt;col-3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-10"&gt;col-10&lt;/div&gt;
+    &lt;div class="c-cl-col-2"&gt;col-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-11"&gt;col-11&lt;/div&gt;
+    &lt;div class="c-cl-col-1"&gt;col-1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="c-cl-row"&gt;
+    &lt;div class="c-cl-col-12"&gt;col-12&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </article>
+      <hr class="c-hr">
       <article id="buttons" class="c-article">
         <h1>Buttons</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cu
@@ -62,7 +178,7 @@
         </p>
         <section class="c-section">
           <h3>Basic</h3>
-          <div class="c-buttons-showcase">
+          <div class="c-showcase c-buttons-showcase">
             <div class="c-button-container">
               <a class="c-button c-button--basic">Primary</a>
               <span class="c-button-description">Normal</span>
@@ -116,7 +232,7 @@
         </section>
         <section class="c-section">
           <h3>Rounded</h3>
-          <div class="c-buttons-showcase">
+          <div class="c-showcase c-buttons-showcase">
             <div class="c-button-container">
               <a class="c-button c-button--rounded">Primary</a>
               <span class="c-button-description">Normal</span>
@@ -173,16 +289,12 @@
       <hr class="c-hr">
       <!-- tabs -->
       <article id="tabs" class="c-article">
-        <h1>
-          Tabs
-        </h1>
+        <h1>Tabs</h1>
         <p>
           Tabs are a magical way to share information with users.
         </p>
         <section class="c-section">
-          <h2>
-            Horizontal tabs
-          </h2>
+          <h2>Horizontal Tabs</h2>
           <p>
             Consider horizontal tabs when you have a smaller number of
             sections.
@@ -570,7 +682,7 @@
           penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
         <section class="c-section">
-          <div class="c-carousel is-set" style="margin-bottom: 24px">
+          <div class="c-showcase c-carousel is-set">
             <ul class="c-carousel__canvas">
               <li class="c-carousel__seat">
                 <img src="http://placekitten.com/748/400" alt=""/>

@@ -1,7 +1,5 @@
 .c-buttons-showcase {
   @include flex-container($spacing: space-between);
-  margin-bottom: $base-spacing-unit-large;
-
 }
 
 .c-button-container {
