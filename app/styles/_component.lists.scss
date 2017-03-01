@@ -5,9 +5,10 @@
 }
 
 .c-list__item {
-  background-color: $color-bg-white;
-  border: 1px solid $color-font-gray;
+  background-color: $color-maroon-lighter5;
+  border: 1px solid $color-maroon;
   border-bottom: none;
+  color: $color-maroon-darker1;
   padding: 1rem;
   transition: background-color 0.2s ease-in;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
@@ -17,7 +18,7 @@
   }
 
   &:last-of-type {
-    border-bottom: 1px solid $color-font-gray;
+    border-bottom: 1px solid $color-maroon;
     border-radius: 0 0 $base-radius $base-radius;
   }
 
@@ -26,6 +27,6 @@
   }
 
   &:hover {
-    background-color: $color-font-white;
+    background-color: $color-maroon-lighter4;
   }
 }
