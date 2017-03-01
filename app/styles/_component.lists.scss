@@ -1,0 +1,31 @@
+.c-list {
+  background-color: transparent;
+  @include flex-container(column, stretch);
+  //box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.c-list__item {
+  background-color: $color-bg-white;
+  border: 1px solid $color-font-gray;
+  border-bottom: none;
+  padding: 1rem;
+  transition: background-color 0.2s ease-in;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+
+  &:first-of-type {
+    border-radius: $base-radius $base-radius 0 0;
+  }
+
+  &:last-of-type {
+    border-bottom: 1px solid $color-font-gray;
+    border-radius: 0 0 $base-radius $base-radius;
+  }
+
+  & > .c-list {
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    background-color: $color-font-white;
+  }
+}

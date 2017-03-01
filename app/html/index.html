@@ -45,6 +45,7 @@
     <h2 class="c-side-menu__title">UI COMPONENTS</h2>
     <nav class="c-side-menu__links">
       <a href="#columns" class="c-side-menu__link is-active">COLUMN LAYOUT</a>
+      <a href="#lists" class="c-side-menu__link">LISTS</a>
       <a href="#buttons" class="c-side-menu__link">BUTTONS</a>
       <a href="#tabs" class="c-side-menu__link">TABS</a>
       <a href="#cards" class="c-side-menu__link">CARDS</a>
@@ -170,7 +171,50 @@
           </div>
         </section>
       </article>
+
       <hr class="c-hr">
+
+      <article id="lists" class="c-article">
+        <h1>Lists</h1>
+        <p>Lists are a clever way to list things</p>
+        <section class="c-section">
+          <div class="c-showcase">
+            <ul class="c-list">
+              <li class="c-list__item">List Item 1</li>
+              <li class="c-list__item">List Item 2</li>
+              <li class="c-list__item">List Item 3
+                <ul class="c-list">
+                  <li class="c-list__item">Sublist Item 1</li>
+                  <li class="c-list__item">Sublist Item 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-ol" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <div class="c-code-box__header">
+              <label for="code-box-ol" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-ol" class="c-code-box__label">hide markup</label>
+              <label for="code-box-ol" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+              <pre><code class="microlight">&lt;ul class="c-list"&gt;
+  &lt;li class="c-list__item"&gt;List Item 1&lt;/li&gt;
+  &lt;li class="c-list__item"&gt;List Item 2&lt;/li&gt;
+  &lt;li class="c-list__item"&gt;List Item 3
+    &lt;ul class="c-list"&gt;
+      &lt;li class="c-list__item"&gt;Sublist Item 1&lt;/li&gt;
+      &lt;li class="c-list__item"&gt;Sublist Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <hr class="c-hr">
+
       <article id="buttons" class="c-article">
         <h1>Buttons</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cu
@@ -290,15 +334,10 @@
       <!-- tabs -->
       <article id="tabs" class="c-article">
         <h1>Tabs</h1>
-        <p>
-          Tabs are a magical way to share information with users.
-        </p>
+        <p>Tabs are a magical way to share information with users.</p>
         <section class="c-section">
           <h2>Horizontal Tabs</h2>
-          <p>
-            Consider horizontal tabs when you have a smaller number of
-            sections.
-          </p>
+          <p>Consider horizontal tabs when you have a smaller number of sections.</p>
           <!-- horizontal stairs -->
           <div class="c-tab__container">
             <input class="c-tab__input" type="radio" name="tabs--stairs" id="c-tab-1--stairs" checked="checked"/>
@@ -377,9 +416,7 @@
               Stop bickering or I'm going to come back there and change your
               opinion s manually! Robots 1-X, save my friends! And Zoidberg!
             </p>
-            <button class="c-button c-button--basic c-tab__feature-button">
-              Read more...
-            </button>
+            <button class="c-button c-button--basic c-tab__feature-button">Read more...</button>
           </div>
         </div>
       </template>
@@ -387,9 +424,7 @@
       <hr class="c-hr">
       <!-- cards -->
       <article id="cards" class="c-article">
-        <h1>
-          Cards
-        </h1>
+        <h1>Cards</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -409,9 +444,7 @@
               <hr class="c-card__horizontal-rule"/>
               <p class="c-subtitle">Our budget-friendly guides reveal their best kept secrets and tips for experiencing
                 seven amazing cities on a shoestring.</p>
-              <button class="c-card-button c-button c-button--active">
-                Read more...
-              </button>
+              <button class="c-card-button c-button c-button--active">Read more...</button>
             </div>
           </div>
         </section>
@@ -742,23 +775,23 @@
         </div>
         <div class="c-dev">
           <a href="https://github.com/stefanfrede" target="_blank">
-            <img class="c-dev__img" src="assets/images/stefanfrede.jpg"alt="Stefan Frede"/>
+            <img class="c-dev__img" src="assets/images/stefanfrede.jpg" alt="Stefan Frede"/>
           </a>
           <span class="c-dev__name">
-              <a href="https://github.com/stefanfrede"target="_blank">Stefan Frede</a>
+              <a href="https://github.com/stefanfrede" target="_blank">Stefan Frede</a>
             </span>
         </div>
         <div class="c-dev">
           <a href="https://github.com/watlandc" target="_blank">
-            <img class="c-dev__img" src="assets/images/watlandc.jpg"alt="Chris Watland"/>
+            <img class="c-dev__img" src="assets/images/watlandc.jpg" alt="Chris Watland"/>
           </a>
           <span class="c-dev__name">
-              <a href="https://github.com/watlandc"target="_blank">Chris Watland</a>
+              <a href="https://github.com/watlandc" target="_blank">Chris Watland</a>
             </span>
         </div>
         <div class="c-dev">
           <a href="https://github.com/escorponox" target="_blank">
-            <img class="c-dev__img" src="assets/images/escorponox.jpg"alt="Carlos Coves"/>
+            <img class="c-dev__img" src="assets/images/escorponox.jpg" alt="Carlos Coves"/>
           </a>
           <span class="c-dev__name">
               <a href="https://github.com/escorponox" target="_blank">Carlos Coves</a>
