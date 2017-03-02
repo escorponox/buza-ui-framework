@@ -3,15 +3,13 @@ import throttle from 'lodash.throttle';
 import menuHighlight from './menu-highlight';
 
 export default () => {
-  const header = document.querySelector('header');
   const mainContent = document.getElementById('main-content');
   const sideMenu = document.getElementById('side-menu');
   const articles = document.querySelectorAll('.c-article');
   const articlesLinks = document.querySelectorAll('.c-side-menu__link');
 
   const sideMenuStickyHandler = throttle(() => {
-    const topOffset = header.offsetHeight + mainContent.offsetTop;
-    const leftOffset = header.offsetLeft + sideMenu.offsetLeft;
+    const topOffset = mainContent.offsetTop;
 
     window.pageYOffset > topOffset ?
       sideMenu.classList.add('is-fixed') :

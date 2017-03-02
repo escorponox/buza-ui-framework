@@ -35,10 +35,6 @@
   </nav>
 </header>
 
-<div class="modal-container">
-  <input id="modal-toggle" type="checkbox" style="display: none"/>
-</div>
-
 <div class="c-content">
   <div id="side-menu" class="c-side-menu">
     <h2 class="c-side-menu__title">UI COMPONENTS</h2>
@@ -46,6 +42,7 @@
       <a href="#columns" class="c-side-menu__link is-active">COLUMN LAYOUT</a>
       <a href="#lists" class="c-side-menu__link">LISTS</a>
       <a href="#tables" class="c-side-menu__link">TABLES</a>
+      <a href="#modals" class="c-side-menu__link">MODALS</a>
       <a href="#buttons" class="c-side-menu__link">BUTTONS</a>
       <a href="#tabs" class="c-side-menu__link">TABS</a>
       <a href="#cards" class="c-side-menu__link">CARDS</a>
@@ -407,6 +404,46 @@
       &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <hr class="c-hr">
+
+      <article id="modals" class="c-article">
+        <h1>Modals</h1>
+        <p>Modals is a funny way to display dialog boxes
+        </p>
+        <section class="c-section">
+          <div class="c-showcase">
+            <label for="modal-toggle" class="c-modal__box__button">Open Modal</label>
+            <input id="modal-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <label for="modal-toggle" class="c-modal__background"></label>
+              <div class="c-modal__box">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <label for="modal-toggle" class="c-modal__box__button">Close</label>
+              </div>
+            </div>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-modals" type="checkbox" class="c-code-box__toggle"/>
+            <div class="c-code-box__header">
+              <label for="code-box-modals" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-modals" class="c-code-box__label">hide markup</label>
+              <label for="code-box-modals" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+                <pre><code class="microlight">&lt;label for="modal-toggle" class="c-modal__box__button"&gt;Open Modal&lt;/label&gt;
+&lt;input id="modal-toggle" type="checkbox" class="c-modal-toggle"&gt;
+&lt;div class="c-modal"&gt;
+  &lt;label for="modal-toggle" class="c-modal__background"&gt;&lt;/label&gt;
+  &lt;div class="c-modal__box"&gt;
+    &lt;h1 class="c-modal__box__title"&gt;Funny!!! Isn't it?&lt;/h1&gt;
+    &lt;label for="modal-toggle" class="c-modal__box__button"&gt;Close&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
