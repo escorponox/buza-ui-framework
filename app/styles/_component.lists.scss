@@ -1,7 +1,7 @@
 .c-list {
   background-color: transparent;
   @include flex-container(column, stretch);
-  //box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  list-style: none;
 }
 
 .c-list__item {

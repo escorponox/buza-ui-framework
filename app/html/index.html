@@ -4,8 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>
-    UI Framework
+  <title>Buza UI Framework
   </title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
@@ -20,7 +19,7 @@
 <body>
 <header class="c-header">
   <div class="c-header__title">
-    <h1 class="c-title">OF-UI Framework</h1>
+    <h1 class="c-title">Buza UI Framework</h1>
     <div class="c-header__search">
       <input class="c-search__input" type="text" value="" required="required"/>
       <span class="c-search__placeholder">Search</span>
@@ -112,7 +111,7 @@
             </div>
           </div>
           <div class="c-code-box">
-            <input id="code-box-cl" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-cl" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
               <label for="code-box-cl" class="c-code-box__label">&lt;/&gt;</label>
               <label for="code-box-cl" class="c-code-box__label">hide markup</label>
@@ -179,6 +178,62 @@
         <h1>Lists</h1>
         <p>Lists are a clever way to list things</p>
         <section class="c-section">
+          <h3>Unordered and Ordered Lists</h3>
+          <div class="c-showcase">
+            <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3
+                <ul>
+                  <li>Sublist Item 1</li>
+                  <li>Sublist Item 2</li>
+                </ul>
+              </li>
+            </ul>
+            <ol>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3
+                <ol>
+                  <li>Sublist Item 1</li>
+                  <li>Sublist Item 2</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-lists" type="checkbox" class="c-code-box__toggle"/>
+            <div class="c-code-box__header">
+              <label for="code-box-lists" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-lists" class="c-code-box__label">hide markup</label>
+              <label for="code-box-lists" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+              <pre><code class="microlight">&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3
+    &lt;ul&gt;
+      &lt;li&gt;Sublist Item 1&lt;/li&gt;
+      &lt;li&gt;Sublist Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3
+    &lt;ol&gt;
+      &lt;li&gt;Sublist Item 1&lt;/li&gt;
+      &lt;li&gt;Sublist Item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <h3>List Groups</h3>
           <div class="c-showcase">
             <ul class="c-list">
               <li class="c-list__item">List Item 1</li>
@@ -192,11 +247,11 @@
             </ul>
           </div>
           <div class="c-code-box">
-            <input id="code-box-ol" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-list-group" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
-              <label for="code-box-ol" class="c-code-box__label">&lt;/&gt;</label>
-              <label for="code-box-ol" class="c-code-box__label">hide markup</label>
-              <label for="code-box-ol" class="c-code-box__label">show markup</label>
+              <label for="code-box-list-group" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-list-group" class="c-code-box__label">hide markup</label>
+              <label for="code-box-list-group" class="c-code-box__label">show markup</label>
             </div>
             <div class="c-code-box__code">
               <pre><code class="microlight">&lt;ul class="c-list"&gt;
@@ -250,7 +305,7 @@
             </table>
           </div>
           <div class="c-code-box">
-            <input id="code-box-table--responsive" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-table--responsive" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
               <label for="code-box-table--responsive" class="c-code-box__label">&lt;/&gt;</label>
               <label for="code-box-table--responsive" class="c-code-box__label">hide markup</label>
@@ -321,7 +376,7 @@
             </div>
           </div>
           <div class="c-code-box">
-            <input id="code-box-table" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-table" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
               <label for="code-box-table" class="c-code-box__label">&lt;/&gt;</label>
               <label for="code-box-table" class="c-code-box__label">hide markup</label>
@@ -400,7 +455,7 @@
             </div>
           </div>
           <div class="c-code-box">
-            <input id="code-box-1" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-1" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
               <label for="code-box-1" class="c-code-box__label">&lt;/&gt;</label>
               <label for="code-box-1" class="c-code-box__label">hide markup</label>
@@ -882,7 +937,7 @@
             </div>
           </div>
           <div class="c-code-box">
-            <input id="code-box-999" type="checkbox" class="c-code-box__toggle" checked="checked"/>
+            <input id="code-box-999" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
               <label for="code-box-999" class="c-code-box__label">&lt;/&gt;</label>
               <label for="code-box-999" class="c-code-box__label">hide markup</label>
@@ -911,6 +966,14 @@
       <h6>Site Developed By:</h6>
       <div class="c-dev-showcase">
         <div class="c-dev">
+          <a href="https://github.com/escorponox" target="_blank">
+            <img class="c-dev__img" src="assets/images/escorponox.jpg" alt="Carlos Coves"/>
+          </a>
+          <span class="c-dev__name">
+              <a href="https://github.com/escorponox" target="_blank">Carlos Coves</a>
+            </span>
+        </div>
+        <div class="c-dev">
           <a href="https://github.com/cusxio" target="_blank">
             <img class="c-dev__img" src="assets/images/cusxio.jpg" alt="Jonathan Chan"/>
           </a>
@@ -932,14 +995,6 @@
           </a>
           <span class="c-dev__name">
               <a href="https://github.com/watlandc" target="_blank">Chris Watland</a>
-            </span>
-        </div>
-        <div class="c-dev">
-          <a href="https://github.com/escorponox" target="_blank">
-            <img class="c-dev__img" src="assets/images/escorponox.jpg" alt="Carlos Coves"/>
-          </a>
-          <span class="c-dev__name">
-              <a href="https://github.com/escorponox" target="_blank">Carlos Coves</a>
             </span>
         </div>
       </div>

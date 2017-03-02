@@ -13,15 +13,9 @@ export default () => {
     const topOffset = header.offsetHeight + mainContent.offsetTop;
     const leftOffset = header.offsetLeft + sideMenu.offsetLeft;
 
-    if (window.pageYOffset > topOffset) {
-      mainContent.style.paddingLeft = sideMenu.offsetWidth + 'px';
-      sideMenu.classList.add('is-fixed');
-      sideMenu.style.left = leftOffset;
-    } else {
-      mainContent.style.paddingLeft = '';
-      sideMenu.classList.remove('is-fixed');
-      sideMenu.style.left = '';
-    }
+    window.pageYOffset > topOffset ?
+      sideMenu.classList.add('is-fixed') :
+      sideMenu.classList.remove('is-fixed')
   }, 100);
 
   const highlightArticle = throttle(() => {

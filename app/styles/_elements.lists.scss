@@ -1,5 +1,9 @@
 ul {
-  list-style: none;
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
 }
 
 li > {
@@ -8,6 +12,14 @@ li > {
   ol {
     margin-bottom: $base-spacing-unit;
     margin-left: $base-spacing-unit;
+  }
+
+  ul {
+    list-style: circle inside;
+  }
+
+  ol {
+    list-style: lower-alpha inside;
   }
 
 }
