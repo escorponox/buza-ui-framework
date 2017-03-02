@@ -1,0 +1,28 @@
+.c-scrollspy {
+  background-color: $color-bg-white;
+  height: $base-spacing-unit;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.c-js-scrollspy__indicator {
+  background-color: $color-maroon;
+  position: relative;
+  width: 0;
+  height: $base-spacing-unit;
+
+  &:after {
+    border-left: 8px solid $color-maroon;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    content: '';
+    height: $base-spacing-unit;
+    left: 100%;
+    position: absolute;
+    top: 0;
+  }
+}

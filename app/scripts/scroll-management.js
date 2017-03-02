@@ -1,6 +1,7 @@
 import smoothScroll from './smooth-scroll';
 import throttle from 'lodash.throttle';
 import menuHighlight from './menu-highlight';
+import scrollSpy from './scrollspy';
 
 export default () => {
   const mainContent = document.getElementById('main-content');
@@ -27,6 +28,7 @@ export default () => {
 
   window.addEventListener('scroll', sideMenuStickyHandler);
   window.addEventListener('scroll', highlightArticle);
+  window.addEventListener('scroll', scrollSpy);
 
   Array.from(articlesLinks).forEach(link => {
     link.addEventListener('click', event => {
@@ -37,5 +39,7 @@ export default () => {
       smoothScroll(500, targetPosition);
     })
   });
+
+  scrollSpy();
 
 }
