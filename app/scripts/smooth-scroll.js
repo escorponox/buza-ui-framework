@@ -1,7 +1,6 @@
 export default (duration, endScroll, offset = 0) => {
   let start = null;
   const initScroll = window.pageYOffset;
-  offset = endScroll - initScroll < 0 ? offset : 0;
 
   function step(timestamp) {
     if (!start) start = timestamp;

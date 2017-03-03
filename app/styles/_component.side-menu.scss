@@ -20,12 +20,12 @@
 }
 
 .c-side-menu__link {
-  @include flex-container(column, flex-end);
-  @include font-size(18px);
   font-weight: 700;
+  @include font-size(18px);
   margin-bottom: $base-radius;
   padding: .5rem 2rem .5rem 0;
   position: relative;
+  text-align: right;
 
   &:hover {
     color: $color-font-white;

@@ -8,6 +8,7 @@ export default () => {
   const sideMenu = document.getElementById('side-menu');
   const articles = document.querySelectorAll('.c-article');
   const articlesLinks = document.querySelectorAll('.c-side-menu__link');
+  const fixedHeader = document.querySelector('.c-scrollspy');
 
   const sideMenuStickyHandler = throttle(() => {
     const topOffset = mainContent.offsetTop;
@@ -36,7 +37,7 @@ export default () => {
       event.preventDefault();
       const targetId = event.currentTarget.getAttribute('href').slice(1);
       const targetPosition = document.getElementById(targetId).getBoundingClientRect().top + window.pageYOffset;
-      smoothScroll(500, targetPosition);
+      smoothScroll(500, targetPosition, fixedHeader.offsetHeight);
     })
   });
 
