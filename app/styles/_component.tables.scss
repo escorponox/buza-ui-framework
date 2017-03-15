@@ -1,6 +1,6 @@
 .c-table {
-  background-color: $color-maroon-lighter5;
-  border: 1px solid $color-maroon;
+  background-color: $color-theme-lighter5;
+  border: 1px solid $color-theme;
   border-radius: $base-radius;
 }
 
@@ -16,19 +16,19 @@
 }
 
 .c-table__header {
-  background-color: $color-maroon-lighter4;
-  color: $color-maroon-darker1;
+  background-color: $color-theme-lighter4;
+  color: $color-theme-darker1;
 
 }
 
 .c-table__head {
   border-radius: $base-radius;
-  color: $color-maroon-darker1;
+  color: $color-theme-darker1;
   padding: 0.5rem;
 }
 
 .c-table__cell {
-  color: $color-maroon;
+  color: $color-theme;
   font-weight: 400;
   padding: 0.5rem;
 }

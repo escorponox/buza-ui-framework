@@ -26,9 +26,9 @@
   }
 
   .c-pagination__item {
-    color: $color-maroon-lighter1;
+    color: $color-theme-lighter1;
     &.current {
-      background: $color-maroon-lighter1;
+      background: $color-theme-lighter1;
       color: $color-white;
       font-weight: 300;
     }
@@ -37,7 +37,7 @@
 
 %c-pagination--variations-fonts {
   align-items: center;
-  border: 1px solid $color-maroon-lighter1;
+  border: 1px solid $color-theme-lighter1;
   display: flex;
   height: 32px;
   justify-content: center;
@@ -74,11 +74,11 @@
   }
 
   &.current {
-    color: $color-maroon-lighter1;
+    color: $color-theme-lighter1;
     font-weight: 700;
   }
 }
 
 .c-pagination__arrow {
-  color: $color-maroon-lighter1;
+  color: $color-theme-lighter1;
 }

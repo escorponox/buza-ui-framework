@@ -8,12 +8,12 @@
 
 .c-code-box__header {
   @include flex-container($spacing: space-between);
-  color: $color-font-black;
+  color: $color-bg-dark;
   font-weight: 700;
   margin-bottom: $base-spacing-unit;
 
   &:hover {
-    color: $color-maroon-input-bg;
+    color: $color-theme-darker1;
   }
 
   :nth-last-of-type(1) {
@@ -24,10 +24,10 @@
   }
 
   @at-root .c-code-box__toggle:checked + & {
-    color: $color-maroon;
+    color: $color-theme;
 
     &:hover {
-      color: $color-maroon-input-bg;
+      color: $color-theme-darker1;
     }
 
     :nth-last-of-type(1) {
@@ -51,17 +51,17 @@
 
 .c-code-box__code {
   @include font-size(12px);
-  background-color: $color-code-bg;
-  border: 1px solid $color-font-gray;
+  background-color: $color-bg;
+  border: 1px solid $color-disabled;
   border-radius: $base-radius;
-  color: $color-code-attributes;
+  color: $color-font-white;
   max-height: 0;
   overflow: auto;
   padding: 0 $base-spacing-unit-large;
   transition: all 0.3s ease-in-out;
 
   @at-root .c-code-box__toggle:checked ~ & {
-    border-color: $color-code-bg;
+    border-color: $color-bg;
     padding: $base-spacing-unit $base-spacing-unit-large;
     max-height: 500px;
   }

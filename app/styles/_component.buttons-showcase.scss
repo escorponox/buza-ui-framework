@@ -1,14 +1,19 @@
 .c-buttons-showcase {
-  @include flex-container($spacing: space-between);
+  @include flex-container();
 }
 
 .c-button-container {
   @include flex-container(column);
   flex-shrink: 0;
+  margin-right: $base-spacing-unit-large;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .c-button-description {
   @include font-size(12px);
-  color: $color-font-gray;
+  color: $color-disabled;
   text-transform: uppercase;
 }

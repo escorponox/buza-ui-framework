@@ -20,7 +20,7 @@
 }
 
 .c-accordion__title {
-  color: $color-font-gray;
+  color: $color-disabled;
   font-size: 18px;
   font-weight: 400;
   margin: 0;
@@ -28,7 +28,7 @@
 }
 
 .c-accordion-panels {
-  border-top: 3px solid $color-maroon;
+  border-top: 3px solid $color-theme;
   padding: 24px;
 }
 

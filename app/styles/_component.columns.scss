@@ -1,6 +1,6 @@
 .c-column-layout {
-  background-color: $color-maroon-lighter5;
-  border: 1px solid $color-maroon;
+  background-color: $color-theme-lighter5;
+  border: 1px solid $color-theme;
   border-radius: $base-radius;
   padding: 1rem;
 }
@@ -15,10 +15,10 @@
 }
 
 %c-cl-col {
-  background-color: $color-maroon-lighter4;
-  border: 1px solid $color-maroon;
+  background-color: $color-theme-lighter4;
+  border: 1px solid $color-theme;
   border-radius: $base-radius;
-  color: $color-maroon-darker1;
+  color: $color-theme-darker1;
   margin: 0 $base-radius;
   padding: $base-radius;
 

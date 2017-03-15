@@ -2,8 +2,6 @@ import WebFont from 'webfontloader';
 import microLight from 'microlight';
 import documentReady from './document-ready';
 import scrollManagement from './scroll-management';
-import carousels from './carousels';
-import injectContent from './inject-content';
 import curtain from './curtain';
 
 WebFont.load({
@@ -15,9 +13,7 @@ WebFont.load({
   },
 });
 
-documentReady(carousels);
 documentReady(scrollManagement);
-documentReady(injectContent);
 documentReady(curtain);
 
 // https://webpack.github.io/docs/hot-module-replacement.html

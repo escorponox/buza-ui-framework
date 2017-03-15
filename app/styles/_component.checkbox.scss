@@ -26,7 +26,7 @@
 }
 
 .c-checkbox__label {
-  color: $color-maroon-lighter1;
+  color: $color-theme-lighter1;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -74,7 +74,7 @@
 
 .c-checkbox--black {
   .c-checkbox__outline {
-    border-color: $color-maroon-lighter1;
+    border-color: $color-theme-lighter1;
   }
 
   .fa-check {
@@ -92,7 +92,7 @@
   }
 
   .fa-check {
-    color: $color-maroon-lighter1;
+    color: $color-theme-lighter1;
   }
 }
 
@@ -100,8 +100,8 @@
   .c-checkbox__input {
     &:checked {
       ~ .c-checkbox__outline {
-        background: $color-maroon-lighter1;
-        border-color: $color-maroon-lighter1;
+        background: $color-theme-lighter1;
+        border-color: $color-theme-lighter1;
       }
     }
   }

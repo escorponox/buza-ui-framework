@@ -56,27 +56,27 @@
   &:nth-child(8),
   &:nth-child(11),
   &:nth-child(14) {
-    background-color: $color-maroon;
+    background-color: $color-theme;
   }
 
   &:nth-child(2),
   &:nth-child(5),
   &:nth-child(12),
   &:nth-child(15) {
-    background-color: $color-maroon-lighter1;
+    background-color: $color-theme-lighter1;
   }
 
   &:nth-child(3),
   &:nth-child(6),
   &:nth-child(9),
   &:nth-child(16) {
-    background-color: $color-maroon-lighter2;
+    background-color: $color-theme-lighter2;
   }
 
   &:nth-child(4),
   &:nth-child(7),
   &:nth-child(10),
   &:nth-child(13) {
-    background-color: $color-maroon-lighter3;
+    background-color: $color-theme-lighter3;
   }
 }

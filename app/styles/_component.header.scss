@@ -1,5 +1,5 @@
 .c-header {
-  background-color: $color-bg-gray-dark;
+  background-color: $color-bg-dark;
   padding: 4.5rem;
   padding-bottom: 0;
 }
@@ -14,7 +14,7 @@
 }
 
 .c-header__search {
-  color: $color-font-clay;
+  color: $color-font-page;
   height: 2.5em;
   position: relative;
   z-index: 10;
@@ -22,9 +22,9 @@
 
 .c-search__input {
   background-color: transparent;
-  border: 1px solid $color-font-clay;
+  border: 1px solid $color-font-page;
   border-radius: $base-radius 0 0 $base-radius;
-  color: $color-font-clay;
+  color: $color-font-page;
   display: inline-block;
   height: 2.5em;
   margin-right: 2.5em;
@@ -34,11 +34,11 @@
 
 .c-search__button {
   @include flex-container(row, center, center);
-  border: 1px solid $color-font-clay;
+  border: 1px solid $color-font-page;
   border-left: none;
   border-radius: 0 4px 4px 0;
   bottom: 0;
-  color: $color-font-clay;
+  color: $color-font-page;
   cursor: pointer;
   height: 2.5em;
   left: 13em;
@@ -59,7 +59,7 @@
 
 .c-search__placeholder {
   @include font-size(18px);
-  color: darken($color-font-clay, 10%);
+  color: darken($color-font-page, 10%);
   display: inline-block;
   left: .5em;
   position: absolute;
