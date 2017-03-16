@@ -40,3 +40,29 @@
   @extend .c-button;
   border-radius: $base-spacing-unit * 1.25;
 }
+
+.c-button-group {
+  @include flex-container($spacing: stretch);
+
+  :not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+  }
+
+  :not(:first-of-type) {
+    border-left-width: 0;
+  }
+
+  :disabled + :not(:first-of-type) {
+    border-left-width: 1px;
+  }
+
+  :first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  :last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

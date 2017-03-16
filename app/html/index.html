@@ -581,7 +581,7 @@
 
       <article id="buttons" class="c-article">
         <h1>Buttons</h1>
-        <p>Different button styles that can be applied to anchors, buttons or divs</p>
+        <p>Different button styles that can be applied to anchors, labels, divs or buttons themselves</p>
         <section class="c-section">
           <h3>Basic</h3>
           <div class="c-showcase c-buttons-showcase">
@@ -594,8 +594,12 @@
               <span class="c-button-description">Button</span>
             </div>
             <div class="c-button-container">
-              <div class="c-button">Send</div>
+              <div class="c-button">Primary</div>
               <span class="c-button-description">Div</span>
+            </div>
+            <div class="c-button-container">
+              <label class="c-button">Primary</label>
+              <span class="c-button-description">Label</span>
             </div>
             <div class="c-button-container">
               <button class="c-button">
@@ -611,20 +615,21 @@
             </div>
           </div>
           <div class="c-code-box">
-            <input id="code-box-1" type="checkbox" class="c-code-box__toggle"/>
+            <input id="code-box-button-basic" type="checkbox" class="c-code-box__toggle"/>
             <div class="c-code-box__header">
-              <label for="code-box-1" class="c-code-box__label">&lt;/&gt;</label>
-              <label for="code-box-1" class="c-code-box__label">hide markup</label>
-              <label for="code-box-1" class="c-code-box__label">show markup</label>
+              <label for="code-box-button-basic" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-button-basic" class="c-code-box__label">hide markup</label>
+              <label for="code-box-button-basic" class="c-code-box__label">show markup</label>
             </div>
             <div class="c-code-box__code">
-                <pre><code class="microlight">&lt;a class="c-button c-button--basic"&gt;
-  Primary
-&lt;/a&gt;
-&lt;div class="c-button c-button--basic"&gt;
-  &lt;i class="fa fa-send"&gt;&lt;/i&gt;Send
-&lt;/div&gt;
-&lt;button class="c-button c-button--basic" disabled&gt;
+                <pre><code class="microlight">&lt;a class="c-button"&gt;Primary&lt;/a&gt;
+&lt;button class="c-button"&gt;Primary&lt;/button&gt;
+&lt;div class="c-button"&gt;Primary&lt;/div&gt;
+&lt;label class="c-button"&gt;Primary&lt;/label&gt;
+&lt;button class="c-button"&gt;
+  &lt;i class="fa fa-user-plus"&gt;&lt;/i&gt;Add User
+&lt;/button&gt;
+&lt;button class="c-button" disabled&gt;
   &lt;i class="fa fa-cog"&gt;&lt;/i&gt;Settings
 &lt;/button&gt;</code></pre>
             </div>
@@ -642,8 +647,12 @@
               <span class="c-button-description">Button</span>
             </div>
             <div class="c-button-container">
-              <div class="c-button--rounded">Send</div>
+              <div class="c-button--rounded">Primary</div>
               <span class="c-button-description">Div</span>
+            </div>
+            <div class="c-button-container">
+              <label class="c-button--rounded">Primary</label>
+              <span class="c-button-description">Label</span>
             </div>
             <div class="c-button-container">
               <button class="c-button--rounded">
@@ -659,6 +668,53 @@
             </div>
           </div>
           <div class="c-code-box">
+            <input id="code-box-button-rounded" type="checkbox" class="c-code-box__toggle">
+            <div class="c-code-box__header">
+              <label for="code-box-button-rounded" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-button-rounded" class="c-code-box__label">hide markup</label>
+              <label for="code-box-button-rounded" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+                <pre><code class="microlight">&lt;a class="c-button--rounded"&gt;Primary&lt;/a&gt;
+&lt;button class="c-button--rounded"&gt;Primary&lt;/button&gt;
+&lt;div class="c-button--rounded"&gt;Primary&lt;/div&gt;
+&lt;label class="c-button--rounded"&gt;Primary&lt;/label&gt;
+&lt;button class="c-button--rounded"&gt;
+  &lt;i class="fa fa-user-plus"&gt;&lt;/i&gt;Add User
+&lt;/button&gt;
+&lt;button class="c-button--rounded" disabled&gt;
+  &lt;i class="fa fa-cog"&gt;&lt;/i&gt;Settings
+&lt;/button&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <h3>Button Groups</h3>
+          <div class="c-showcase c-buttons-showcase">
+            <div class="c-button-container">
+              <div class="c-button-group">
+                <button class="c-button">Button 1</button>
+                <button class="c-button">Button 2</button>
+                <button class="c-button">Button 3</button>
+                <button class="c-button" disabled>Button 4</button>
+                <button class="c-button">Button 5</button>
+              </div>
+              <span class="c-button-description">Basic</span>
+            </div>
+          </div>
+          <div class="c-showcase c-buttons-showcase">
+            <div class="c-button-container">
+              <div class="c-button-group">
+                <button class="c-button--rounded">Button 1</button>
+                <button class="c-button--rounded">Button 2</button>
+                <button class="c-button--rounded">Button 3</button>
+                <button class="c-button--rounded">Button 4</button>
+                <button class="c-button--rounded" disabled>Button 5</button>
+              </div>
+              <span class="c-button-description">Rounded</span>
+            </div>
+          </div>
+          <div class="c-code-box">
             <input id="code-box-2" type="checkbox" class="c-code-box__toggle">
             <div class="c-code-box__header">
               <label for="code-box-2" class="c-code-box__label">&lt;/&gt;</label>
@@ -666,15 +722,20 @@
               <label for="code-box-2" class="c-code-box__label">show markup</label>
             </div>
             <div class="c-code-box__code">
-                <pre><code class="microlight">&lt;a class="c-button c-button--rounded"&gt;
-  Primary
-&lt;/a&gt;
-&lt;div class="c-button c-button--rounded"&gt;
-  &lt;i class="fa fa-send"&gt;&lt;/i&gt;Send
+                <pre><code class="microlight">&lt;div class="c-button-group"&gt;
+  &lt;button class="c-button"&gt;Button 1&lt;/button&gt;
+  &lt;button class="c-button"&gt;Button 2&lt;/button&gt;
+  &lt;button class="c-button"&gt;Button 3&lt;/button&gt;
+  &lt;button class="c-button" disabled&gt;Button 4&lt;/button&gt;
+  &lt;button class="c-button"&gt;Button 5&lt;/button&gt;
 &lt;/div&gt;
-&lt;button class="c-button c-button--rounded" disabled&gt;
-  &lt;i class="fa fa-cog"&gt;&lt;/i&gt;Settings
-&lt;/button&gt;</code></pre>
+&lt;div class="c-button-group"&gt;
+  &lt;button class="c-button--rounded"&gt;Button 1&lt;/button&gt;
+  &lt;button class="c-button--rounded"&gt;Button 2&lt;/button&gt;
+  &lt;button class="c-button--rounded"&gt;Button 3&lt;/button&gt;
+  &lt;button class="c-button--rounded"&gt;Button 4&lt;/button&gt;
+  &lt;button class="c-button--rounded" disabled&gt;Button 5&lt;/button&gt;
+&lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
