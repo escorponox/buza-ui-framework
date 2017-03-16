@@ -1,7 +1,6 @@
 const showCurtain = () => {
   const curtain = document.querySelector('.c-curtain');
   const timeout = Number(curtain.getAttribute('data-timeout'));
-  console.log(timeout);
 
   curtain.classList.add('c-curtain--js-animate', 'c-curtain--show');
   setTimeout(() => {
