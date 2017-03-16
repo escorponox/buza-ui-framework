@@ -5,14 +5,13 @@
   color: $color-theme;
   cursor: pointer;
   display: inline-block;
-  font-weight: 500;
   font-family: $base-font-family;
+  font-weight: 500;
   height: $base-spacing-unit * 2.5;
   line-height: $base-spacing-unit * 2.5;
   padding: 0 $base-spacing-unit;
   text-align: center;
   transition: color 0.15s linear, border-color 0.15s linear, background 0.15s linear;
-
   &:hover {
     background-color: $color-theme-lighter1;
     border-color: $color-theme-lighter1;
@@ -34,6 +33,9 @@
   .fa {
     padding-right: $base-spacing-unit / 2;
   }
+
+  user-select: none;
+
 }
 
 .c-button--rounded {
@@ -57,12 +59,12 @@
   }
 
   :first-of-type {
-    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
   }
 
   :last-of-type {
-    border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 }

@@ -188,9 +188,21 @@
               <li>List Item 1</li>
               <li>List Item 2</li>
               <li>List Item 3
-                <ol>
-                  <li>Sublist Item 1</li>
-                  <li>Sublist Item 2</li>
+                <ol class="c-ordered-list--lower-alpha">
+                  <li>Lower alpha 1</li>
+                  <li>Lower alpha 2</li>
+                </ol>
+                <ol class="c-ordered-list--upper-alpha">
+                  <li>Upper alpha 1</li>
+                  <li>Upper alpha 2</li>
+                </ol>
+                <ol class="c-ordered-list--lower-roman">
+                  <li>Lower roman 1</li>
+                  <li>Lower roman 2</li>
+                </ol>
+                <ol class="c-ordered-list--upper-roman">
+                  <li>Upper roman 1</li>
+                  <li>Upper roman 2</li>
                 </ol>
               </li>
             </ol>
@@ -218,8 +230,22 @@
   &lt;li&gt;List Item 2&lt;/li&gt;
   &lt;li&gt;List Item 3
     &lt;ol&gt;
-      &lt;li&gt;Sublist Item 1&lt;/li&gt;
-      &lt;li&gt;Sublist Item 2&lt;/li&gt;
+      &lt;ol class="c-ordered-list--lower-alpha"&gt;
+        &lt;li&gt;Lower alpha 1&lt;/li&gt;
+        &lt;li&gt;Lower alpha 2&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;ol class="c-ordered-list--upper-alpha"&gt;
+        &lt;li&gt;Upper alpha 1&lt;/li&gt;
+        &lt;li&gt;Upper alpha 2&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;ol class="c-ordered-list--lower-roman"&gt;
+        &lt;li&gt;Lower roman 1&lt;/li&gt;
+        &lt;li&gt;Lower roman 2&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;ol class="c-ordered-list--upper-roman"&gt;
+        &lt;li&gt;Upper roman 1&lt;/li&gt;
+        &lt;li&gt;Upper roman 2&lt;/li&gt;
+      &lt;/ol&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</code></pre>
@@ -274,26 +300,26 @@
             <table class="c-table">
               <thead>
               <tr class="c-table__header">
-                <th class="c-table__head">Field 1</th>
-                <th class="c-table__head">Field 2</th>
-                <th class="c-table__head">Field 3</th>
+                <td class="c-table__head">Field 1</td>
+                <td class="c-table__head">Field 2</td>
+                <td class="c-table__head">Field 3</td>
               </tr>
               </thead>
               <tbody>
               <tr class="c-table__row">
-                <th class="c-table__cell">Value 1</th>
-                <th class="c-table__cell">Value 2</th>
-                <th class="c-table__cell">Value 3</th>
+                <td class="c-table__cell">Value 1</td>
+                <td class="c-table__cell">Value 2</td>
+                <td class="c-table__cell">Value 3</td>
               </tr>
               <tr class="c-table__row">
-                <th class="c-table__cell">Value 1</th>
-                <th class="c-table__cell">Value 2</th>
-                <th class="c-table__cell">Value 3</th>
+                <td class="c-table__cell">Value 1</td>
+                <td class="c-table__cell">Value 2</td>
+                <td class="c-table__cell">Value 3</td>
               </tr>
               <tr class="c-table__row">
-                <th class="c-table__cell">Value 1</th>
-                <th class="c-table__cell">Value 2</th>
-                <th class="c-table__cell">Value 3</th>
+                <td class="c-table__cell">Value 1</td>
+                <td class="c-table__cell">Value 2</td>
+                <td class="c-table__cell">Value 3</td>
               </tr>
               </tbody>
             </table>
@@ -316,19 +342,19 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;tr class="c-table__row"&gt;
-    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 2&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="c-table__row"&gt;
-    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 2&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="c-table__row"&gt;
-    &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-    &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+    &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 2&lt;/td&gt;
+    &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
   &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
@@ -348,23 +374,22 @@
                   <th class="c-table__head">Field 3</th>
                 </tr>
                 <tr class="c-table__row">
-                  <th class="c-table__cell">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                  <td class="c-table__cell">Value 1</td>
+                  <td class="c-table__cell">Value 2</td>
+                  <td class="c-table__cell">Value 3</td>
+                </tr>
+                <tr class="c-table__row">
+                  <td class="c-table__cell">Value 1</td>
+                  <td class="c-table__cell">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                     ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                    consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                  </th>
-                  <th class="c-table__cell">Value 2</th>
-                  <th class="c-table__cell">Value 3</th>
+                    nascetur ridiculus mus.
+                  </td>
+                  <td class="c-table__cell">Value 3</td>
                 </tr>
                 <tr class="c-table__row">
-                  <th class="c-table__cell">Value 1</th>
-                  <th class="c-table__cell">Value 2</th>
-                  <th class="c-table__cell">Value 3</th>
-                </tr>
-                <tr class="c-table__row">
-                  <th class="c-table__cell">Value 1</th>
-                  <th class="c-table__cell">Value 2</th>
-                  <th class="c-table__cell">Value 3</th>
+                  <td class="c-table__cell">Value 1</td>
+                  <td class="c-table__cell">Value 2</td>
+                  <td class="c-table__cell">Value 3</td>
                 </tr>
               </table>
             </div>
@@ -380,25 +405,24 @@
               <pre><code class="microlight">&lt;div class="c-table--responsive"&gt;
   &lt;table class="c-table"&gt;
     &lt;tr class="c-table__header"&gt;
-      &lt;th class="c-table__head"&gt;Field 1
-      &lt;/th&gt;
+      &lt;th class="c-table__head"&gt;Field 1&lt;/th&gt;
       &lt;th class="c-table__head"&gt;Field 2&lt;/th&gt;
       &lt;th class="c-table__head"&gt;Field 3&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr class="c-table__row"&gt;
-      &lt;th class="c-table__cell"&gt;Lorem ipsum dolor ...&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+      &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Value 2&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr class="c-table__row"&gt;
-      &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+      &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Lorem ipsum dolor ...&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr class="c-table__row"&gt;
-      &lt;th class="c-table__cell"&gt;Value 1&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 2&lt;/th&gt;
-      &lt;th class="c-table__cell"&gt;Value 3&lt;/th&gt;
+      &lt;td class="c-table__cell"&gt;Value 1&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Value 2&lt;/td&gt;
+      &lt;td class="c-table__cell"&gt;Value 3&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
@@ -411,17 +435,22 @@
 
       <article id="modals" class="c-article">
         <h1>Modals</h1>
-        <p>Modals are a funny way to display dialog boxes
-        </p>
+        <p>Modals are a funny way to display dialog boxes</p>
         <section class="c-section">
+          <h3>Centered Modal</h3>
           <div class="c-showcase">
-            <label for="modal-toggle" class="c-modal__box__button">Open Modal</label>
+            <label for="modal-toggle" class="c-button">Open Modal</label>
             <input id="modal-toggle" type="checkbox" class="c-modal-toggle">
             <div class="c-modal">
               <label for="modal-toggle" class="c-modal__background"></label>
               <div class="c-modal__box">
                 <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
-                <label for="modal-toggle" class="c-modal__box__button">Close</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <label for="modal-toggle" class="c-button">Close</label>
               </div>
             </div>
           </div>
@@ -433,15 +462,100 @@
               <label for="code-box-modals" class="c-code-box__label">show markup</label>
             </div>
             <div class="c-code-box__code">
-                <pre><code class="microlight">&lt;label for="modal-toggle" class="c-modal__box__button"&gt;Open Modal&lt;/label&gt;
+                <pre><code class="microlight">&lt;label for="modal-toggle" class="c-button"&gt;Open Modal&lt;/label&gt;
 &lt;input id="modal-toggle" type="checkbox" class="c-modal-toggle"&gt;
 &lt;div class="c-modal"&gt;
   &lt;label for="modal-toggle" class="c-modal__background"&gt;&lt;/label&gt;
   &lt;div class="c-modal__box"&gt;
     &lt;h1 class="c-modal__box__title"&gt;Funny!!! Isn't it?&lt;/h1&gt;
-    &lt;label for="modal-toggle" class="c-modal__box__button"&gt;Close&lt;/label&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet,...&lt;/p&gt;
+    &lt;label for="modal-toggle" class="c-button"&gt;Close&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <h3>Slide Modals</h3>
+          <div class="c-showcase">
+            <label for="modal-top-toggle" class="c-button">Top</label>
+            <input id="modal-top-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <label for="modal-top-toggle" class="c-modal__background"></label>
+              <div class="c-modal__box c-modal__box--from-top">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <label for="modal-top-toggle" class="c-button">Close</label>
+              </div>
+            </div>
+            <label for="modal-bottom-toggle" class="c-button">Bottom</label>
+            <input id="modal-bottom-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <label for="modal-bottom-toggle" class="c-modal__background"></label>
+              <div class="c-modal__box c-modal__box--from-bottom">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <label for="modal-bottom-toggle" class="c-button">Close</label>
+              </div>
+            </div>
+            <label for="modal-left-toggle" class="c-button">Left</label>
+            <input id="modal-left-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <label for="modal-left-toggle" class="c-modal__background"></label>
+              <div class="c-modal__box c-modal__box--from-left">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <label for="modal-left-toggle" class="c-button">Close</label>
+              </div>
+            </div>
+            <label for="modal-right-toggle" class="c-button">Right</label>
+            <input id="modal-right-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <label for="modal-right-toggle" class="c-modal__background"></label>
+              <div class="c-modal__box c-modal__box--from-right">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <label for="modal-right-toggle" class="c-button">Close</label>
+              </div>
+            </div>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-slide-modals" type="checkbox" class="c-code-box__toggle"/>
+            <div class="c-code-box__header">
+              <label for="code-box-slide-modals" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-slide-modals" class="c-code-box__label">hide markup</label>
+              <label for="code-box-slide-modals" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+                <pre><code class="microlight">&lt;div class="c-modal__box c-modal__box--from-top"&gt;
+&lt;div class="c-modal__box c-modal__box--from-bottom"&gt;
+&lt;div class="c-modal__box c-modal__box--from-left"&gt;
+&lt;div class="c-modal__box c-modal__box--from-right"&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <h3>Full Screen Modal</h3>
+          <div class="c-showcase">
+            <label for="modal-full-toggle" class="c-button">Full Screen</label>
+            <input id="modal-full-toggle" type="checkbox" class="c-modal-toggle">
+            <div class="c-modal">
+              <div class="c-modal__box c-modal__box--full-screen">
+                <h1 class="c-modal__box__title">Funny!!! Isn't it?</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <label for="modal-full-toggle" class="c-button">Close</label>
+              </div>
+            </div>
+          </div>
+          <div class="c-code-box">
+            <input id="code-box-full-screen-modals" type="checkbox" class="c-code-box__toggle"/>
+            <div class="c-code-box__header">
+              <label for="code-box-full-screen-modals" class="c-code-box__label">&lt;/&gt;</label>
+              <label for="code-box-full-screen-modals" class="c-code-box__label">hide markup</label>
+              <label for="code-box-full-screen-modals" class="c-code-box__label">show markup</label>
+            </div>
+            <div class="c-code-box__code">
+                <pre><code class="microlight">&lt;div class="c-modal__box c-modal__box--full-screen"&gt;</code></pre>
             </div>
           </div>
         </section>

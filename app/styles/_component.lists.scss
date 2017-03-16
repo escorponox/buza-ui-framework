@@ -30,3 +30,19 @@
     background-color: $color-theme-lighter4;
   }
 }
+
+.c-ordered-list--lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.c-ordered-list--upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.c-ordered-list--lower-roman {
+  list-style-type: lower-roman;
+}
+
+.c-ordered-list--upper-roman {
+  list-style-type: upper-roman;
+}
